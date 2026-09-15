@@ -3,6 +3,8 @@
 
 website:
   title: "Swapnanil SenGupta"
+  site-url: "https://swapnanilsengupta.com"
+  description: "PhD candidate at the Halle Institute for Economic Research (IWH), working in macroeconomics, environmental economics and labour economics."
 
   navbar:
     search: true
