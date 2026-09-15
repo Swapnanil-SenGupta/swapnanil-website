@@ -1,0 +1,64 @@
+﻿---
+title: false
+---
+
+```{=html}
+
+<div class="cv-card-page">
+
+  <div class="cv-card-photo">
+
+    <img
+      src="assets/images/cv-portrait.jpg"
+      alt="Swapnanil SenGupta"
+      title="Less formal than the document next door."
+    >
+
+  </div>
+
+
+  <div class="cv-card-content">
+
+    <div class="cv-custom-title">
+      My career, so far.
+    </div>
+
+
+    <div class="cv-live-preview">
+
+      <iframe
+        src="assets/files/cv.pdf#page=1&view=FitH&toolbar=0&navpanes=0"
+        title="Preview of Swapnanil SenGupta's CV"
+        tabindex="-1">
+      </iframe>
+
+      <a
+        class="cv-preview-link"
+        href="assets/files/cv.pdf"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open CV"
+        title="View CV">
+      </a>
+
+      <div class="cv-preview-label">
+        View full CV
+      </div>
+
+    </div>
+
+
+    <a
+      class="cv-card-download"
+      href="assets/files/cv.pdf"
+      download>
+
+      <i class="bi bi-download"></i>
+      Download CV
+
+    </a>
+
+  </div>
+
+</div>
+```

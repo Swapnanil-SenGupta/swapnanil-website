@@ -1,0 +1,70 @@
+---
+---
+
+```{=html}
+<div class="application-page">
+
+  <section class="application-hero">
+
+    <div class="application-image-wrap">
+
+      <img
+        src="assets/images/applications-road.jpg"
+        alt="A winter road at night"
+        class="application-image"
+      >
+
+      <div class="photo-credit application-photo-credit">
+  Photo © Swapnanil SenGupta
+</div>
+
+    </div>
+
+
+    <div class="application-copy">
+
+      <div class="application-title">
+        A little help for the road ahead.
+      </div>
+
+
+      <div class="application-text">
+
+        <p>
+          PhD applications can feel a bit like walking down a cold and uncertain road at night.
+          You do not always see the whole way ahead, but clarity, preparation and a sense
+          of direction make a great difference. I have shared the cover letter from my
+          successful IWH application below for anyone who may find it useful.
+        </p>
+
+      </div>
+
+
+      <div class="application-bottom-row">
+
+        <a
+          class="application-download-btn"
+          href="assets/files/iwh-cover-letter.pdf"
+          download
+        >
+          Download
+        </a>
+
+        <div class="application-note">
+          Please use it as a reference, not as a template to copy directly.
+        </div>
+
+      </div>
+
+
+      <div class="application-contact-line">
+        For further tips, you can always
+        <a href="contact.html">get in touch here</a>.
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+```

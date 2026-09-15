@@ -1,0 +1,534 @@
+﻿---
+title: false
+format:
+  html:
+    body-classes: home-page
+---
+
+```{=html}
+
+<div class="home-shell">
+
+
+<!-- HERO -->
+
+<section class="home-hero">
+
+  <div class="home-intro">
+
+    <div class="hero-name">Swapnanil SenGupta</div>
+
+    <div class="hero-role">
+     PhD Candidate in Economics
+    </div>
+
+    <div class="hero-affiliation">
+
+      <span class="institution-en">
+        Halle Institute for Economic Research (IWH)
+      </span>
+
+      <span class="institution-de">
+        Leibniz-Institut für Wirtschaftsforschung Halle · Doctoral Programme in Economics
+      </span>
+
+    </div>
+
+    <div class="home-links">
+
+      <a class="home-button primary" href="research.html">
+        Research
+      </a>
+
+      <a class="home-button secondary" href="cv.html">
+        CV
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="home-photo">
+
+    <img
+      src="assets/images/portrait-home.jpg"
+      alt="Portrait of Swapnanil SenGupta"
+    >
+
+  </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="about-layout">
+
+  <div class="about-main">
+
+    <h2>About me</h2>
+
+    <p>
+      I am a researcher in the
+<strong>
+  <a href="https://www.iwh-halle.de/en/about-the-iwh/research-departments/detail/macroeconomics"
+     target="_blank"
+     rel="noopener">
+    Department of Macroeconomics at the Halle Institute for Economic Research (IWH)
+  </a>
+</strong>,
+where I am pursuing my PhD. My research moves across
+<strong>macroeconomics</strong>, <strong>environmental economics</strong>
+and <strong>labour economics</strong>, both within these fields and at the
+points where they meet. My work has appeared in
+reputed peer-reviewed journals including
+<em>Journal of Environmental Management</em>,
+<em>Renewable Energy</em>,
+<em>Sustainable Development</em>,
+<em>Economics of Governance</em> and
+<em>International Review of Applied Economics</em>.
+I have been trained in economics across the Indian,
+British and German academic systems, which has given me a fairly mixed view
+of how the subject is taught, researched and applied. Before joining IWH,
+I held research positions at
+<strong>
+  <a href="https://safe-frankfurt.de/about-safe.html"
+     target="_blank"
+     rel="noopener">
+    Leibniz Institute for Financial Research SAFE
+  </a>
+</strong>,
+the
+<strong>
+  <a href="https://www.wiwi.uni-frankfurt.de/en/faculty/professorships/full-professors"
+     target="_blank"
+     rel="noopener">
+    Chair in Monetary and Fiscal Policy at Goethe University Frankfurt
+  </a>
+</strong>,
+the
+<strong>
+  <a href="https://ncaer.org/projects-listing/"
+     target="_blank"
+     rel="noopener">
+    National Growth &amp; Macroeconomic Centre at NCAER
+  </a>
+</strong>,
+the
+<strong>
+  <a href="https://www.bundesbank.de/en/bundesbank/research/research-centre"
+     target="_blank"
+     rel="noopener">
+    Research Centre of the Deutsche Bundesbank
+  </a>
+</strong>,
+and the
+<strong>
+  <a href="https://www.ifo.de/en/research/ifo-center-for-international-economics"
+     target="_blank"
+     rel="noopener">
+    ifo Center for International Economics
+  </a>
+</strong>.
+Outside research, I am usually somewhere between a book, a sketchbook,
+a half-written screenplay, a theatre seat or a table-tennis table and,
+whenever I get the chance, underwater.
+    </p>
+
+  </div>
+
+
+  <aside class="research-sidebar">
+
+    <h3 class="no-anchor">Research Interests</h3>
+
+    <ul class="interest-list">
+      <li>Macroeconomics</li>
+      <li>Environmental Economics</li>
+      <li>Labour Economics</li>
+    </ul>
+
+  </aside>
+
+</section>
+
+
+
+<!-- WHAT I'M UP TO -->
+
+<section class="working-section">
+
+  <h2>What I’m up to</h2>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Monetary and Macroprudential Policy in a Polluting Economy
+        </div>
+
+        <div class="project-meta">
+          with J. Bratsiotis and K. Pathirage
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      The green transition does not reshape every part of the economy in the
+      same way. We attempt to find how differences in environmental exposure,
+      investment and finance can shape the macroeconomic effects of climate
+      policy.
+
+    </div>
+
+  </details>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Combining Labor Market Reforms and Fiscal Policy in Recessions
+        </div>
+
+        <div class="project-meta">
+          with Britta Gehrke and Enzo Weber
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      Reforms rarely happen in a vacuum. We study how the economic environment
+      surrounding labour-market reforms can shape their employment consequences,
+      with particular attention to the role of fiscal conditions when the
+      economy is weak.
+
+    </div>
+
+  </details>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Environmental Debt as a Macroeconomic Vulnerability State
+        </div>
+
+        <div class="project-meta">
+          with Angeliki Menegaki · Working paper available on request
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      Ecological pressure is not only an environmental problem. Over time, it
+      can become a hidden macroeconomic vulnerability that changes how strongly
+      economies react when extreme weather strikes.
+
+    </div>
+
+  </details>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Measuring the Inequality Structure in India
+        </div>
+
+        <div class="project-meta">
+          with Mridula Debnath
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      What if places that look equally unequal are not unequal in the same way?
+      This project looks beneath standard measures of inequality to study how
+      distributional patterns differ across India, and why those differences
+      may matter.
+
+    </div>
+
+  </details>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Financing Sustained Mitigation under Unequal Capital Costs:
+          Carbon Pricing, Revenue Recycling and External Climate Finance
+        </div>
+
+        <div class="project-meta">
+          with Angeliki Menegaki · Working paper available on request
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      Climate ambition is global, but the cost of financing it is not. Unequal
+      financial conditions can change the policy mix needed to make sustained
+      decarbonisation possible.
+
+    </div>
+
+  </details>
+
+
+  <details class="project-entry">
+
+    <summary>
+
+      <div class="project-heading">
+
+        <div class="project-title">
+          Storage Scarcity and the Inflation Cost of Decarbonisation
+        </div>
+
+        <div class="project-meta">
+          Working paper version available on request
+        </div>
+
+      </div>
+
+    </summary>
+
+    <div class="project-description">
+
+      Clean electricity is not always reliable electricity. Storage scarcity
+      can turn the energy transition into a macroeconomic problem, changing how
+      shocks pass through to prices, inflation, and output.
+
+    </div>
+
+  </details>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section class="education-section">
+
+  <h3>Education</h3>
+
+  <div class="education-grid">
+
+
+    <div class="education-item">
+
+      <div class="education-degree">
+        PhD Economics
+      </div>
+
+      <div class="education-detail">
+        IWH · 2026–present
+      </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <div class="education-degree">
+        MSc Economics
+      </div>
+
+      <div class="education-detail">
+        University of Tübingen · 2020–2022
+      </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <div class="education-degree">
+        MSc Financial Economics
+      </div>
+
+      <div class="education-detail">
+        University of Manchester · 2018–2019
+      </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <div class="education-degree">
+        BA Economics
+      </div>
+
+      <div class="education-detail">
+        University of Burdwan · 2014–2017
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="home-footer">
+
+  <div class="social-links">
+
+
+    <a
+      href="https://orcid.org/0000-0003-2970-5170"
+      target="_blank"
+      rel="noopener"
+      title="ORCID"
+      aria-label="ORCID">
+
+      <img
+        src="https://cdn.simpleicons.org/orcid/2a5c7f"
+        alt="ORCID">
+
+    </a>
+
+
+    <a
+      href="https://scholar.google.com/citations?hl=en&user=q9BYH0QAAAAJ"
+      target="_blank"
+      rel="noopener"
+      title="Google Scholar"
+      aria-label="Google Scholar">
+
+      <img
+        src="https://cdn.simpleicons.org/googlescholar/2a5c7f"
+        alt="Google Scholar">
+
+    </a>
+
+
+    <a
+      class="bootstrap-social"
+      href="https://www.linkedin.com/in/s-sg/"
+      target="_blank"
+      rel="noopener"
+      title="LinkedIn"
+      aria-label="LinkedIn">
+
+      <i class="bi bi-linkedin"></i>
+
+    </a>
+
+
+    <a
+      href="https://www.researchgate.net/profile/Swapnanil-Sengupta"
+      target="_blank"
+      rel="noopener"
+      title="ResearchGate"
+      aria-label="ResearchGate">
+
+      <img
+        src="https://cdn.simpleicons.org/researchgate/2a5c7f"
+        alt="ResearchGate">
+
+    </a>
+
+
+    <a
+      class="bootstrap-social"
+      href="https://www.instagram.com/swapna_neel_?stkn=czJob243dGZ5Y2gx&utm_source=qr"
+      target="_blank"
+      rel="noopener"
+      title="Instagram"
+      aria-label="Instagram">
+
+      <i class="bi bi-instagram"></i>
+
+    </a>
+
+
+  </div>
+
+
+  <div class="footer-text">
+
+    © <span id="copyright-year"></span> Swapnanil SenGupta
+
+    <span class="footer-divider">·</span>
+
+    Last updated <span id="last-updated"></span>
+
+  </div>
+
+</footer>
+
+
+</div>
+
+
+<script>
+document.body.classList.add("home-page");
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();
+
+const modified =
+  new Date(document.lastModified);
+
+document.getElementById("last-updated").textContent =
+  modified.toLocaleDateString(
+    "en-GB",
+    {
+      month: "long",
+      year: "numeric"
+    }
+  );
+
+const homeBrand =
+  document.querySelector(".navbar-brand");
+
+if (homeBrand) {
+  homeBrand.setAttribute(
+    "title",
+    "Back to baseline"
+  );
+}
+
+</script>
+```

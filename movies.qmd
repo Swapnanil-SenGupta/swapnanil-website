@@ -1,0 +1,100 @@
+---
+---
+
+```{=html}
+<div class="movies-page">
+
+  <section class="movies-opening">
+
+    <div class="movies-kicker">
+      AT THE MOVIES
+    </div>
+
+    <div class="movies-heading">
+      Watching is only half of it.
+    </div>
+
+    <div class="movies-deck">
+      I watch widely across languages, countries and periods, and I tend to
+      remember films by writing them down.
+    </div>
+
+  </section>
+
+
+  <section class="movies-ledger">
+
+    <div class="movies-entry">
+
+      <div class="movies-entry-number">
+        01
+      </div>
+
+      <div class="movies-entry-label">
+        WATCH
+      </div>
+
+      <div class="movies-entry-text">
+        Cinema is one of the places where I am happily indiscriminate.
+        Language, country and period are rarely filters; if something
+        interests me, subtitles are hardly going to stop me.
+      </div>
+
+    </div>
+
+
+    <div class="movies-entry">
+
+      <div class="movies-entry-number">
+        02
+      </div>
+
+      <div class="movies-entry-label">
+        LOG
+      </div>
+
+      <div class="movies-entry-text">
+        I log films on Letterboxd with unreasonable consistency. Some
+        entries are critiques, some are notes on what stayed with me,
+        and some record the mood or circumstances around the viewing.
+      </div>
+
+    </div>
+
+
+    <div class="movies-entry movies-entry-last">
+
+      <div class="movies-entry-number">
+        03
+      </div>
+
+      <div class="movies-entry-label">
+        REMEMBER
+      </div>
+
+      <div class="movies-entry-text movies-entry-emphasis">
+        Over time, the diary has become less a record of what I watched
+        and more a record of who I was when I watched it.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="movies-afterword">
+
+    <div class="movies-afterword-main">
+      I like the thought that years from now, the log might still tell
+      someone something about the person doing the watching.
+    </div>
+
+  </section>
+
+
+  <div class="movies-footnote">
+    Continuity errors in my own opinions are preserved for archival purposes.
+  </div>
+
+</div>
+```

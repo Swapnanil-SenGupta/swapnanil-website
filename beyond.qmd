@@ -1,0 +1,283 @@
+﻿---
+title: false
+---
+
+```{=html}
+
+<div class="beyond-page">
+
+
+  <!-- =====================================================
+       EDITORIAL OPENING
+       ===================================================== -->
+
+  <section class="beyond-hero">
+
+
+    <!-- London photograph -->
+
+    <div class="beyond-photo beyond-photo-london">
+
+      <img
+        src="assets/images/beyond-london.jpg"
+        alt="Swapnanil in London"
+      >
+
+    </div>
+
+
+    <!-- Opening words -->
+
+    <div class="beyond-hero-copy">
+
+     <div class="beyond-opening-line">
+       What the CV doesn’t tell you.<br>
+       Hi, I’m Nil.
+      </div>
+
+      <p class="beyond-hero-intro">
+        Now that you have somehow survived my career updates, here is a glimpse
+        of who Swapnanil is when economics is not demanding his attention. So, once again:
+        Hi, I’m Swapnanil, or Nil.
+      </p>
+
+    </div>
+
+
+    <!-- Dog photograph -->
+
+    <div class="beyond-photo beyond-photo-dog">
+
+      <img
+        src="assets/images/beyond-dog.jpg"
+        alt="Swapnanil with a dog"
+      >
+
+    </div>
+
+
+    <!-- Rest of introduction -->
+
+    <div class="beyond-reflection">
+
+      <div class="beyond-reflection-main">
+
+        <p>
+          I have accumulated a slightly unreasonable number of interests over
+          the years. At this point, I suspect collecting hobbies has become a
+          hobby in itself. Some appeared one random morning while I was lying in
+          bed with an entirely blank head. Some came from the people and places
+          around me. Some seem to have always been there, and others began
+          because someone or something made me curious enough to try.
+        </p>
+
+      </div>
+
+
+      <p class="beyond-question">
+        Which makes me wonder: is loving something any less real when you first
+        learnt to love it because someone you love loved it first?
+        I don’t think so. But I’d genuinely like to hear your take.
+      </p>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PERSONAL INDEX
+       ===================================================== -->
+
+  <section class="beyond-index">
+
+
+    <a class="beyond-item" href="books.html">
+
+      <div class="beyond-item-number">01</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          Between the Covers
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Books, reading, and things I underline or occasionally argue with.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="movies.html">
+
+      <div class="beyond-item-number">02</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          At the Movies
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Cinema, filmmakers, and films I keep returning to.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="sketches.html">
+
+      <div class="beyond-item-number">03</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          Lines on Paper
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Sketches made with questionable patience.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="theatre.html">
+
+      <div class="beyond-item-number">04</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          On Stage
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Theatre, performances, and the pleasure of a dark auditorium.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="filmmaking.html">
+
+      <div class="beyond-item-number">05</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          Making Movies
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Film-making, screenplays, and unfinished ideas.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="scuba.html">
+
+      <div class="beyond-item-number">06</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          World Underneath
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Scuba diving and my occasional disappearance underwater.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="table-tennis.html">
+
+      <div class="beyond-item-number">07</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          Across the Table
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Table tennis, preferably taken slightly more seriously than necessary.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="applications.html">
+
+      <div class="beyond-item-number">08</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          The Application Desk
+        </div>
+
+        <div class="beyond-item-subtitle">
+          Helping students and applicants make a stronger case for themselves.
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <a class="beyond-item" href="miscellaneous.html">
+
+      <div class="beyond-item-number">09</div>
+
+      <div class="beyond-item-content">
+
+        <div class="beyond-item-title">
+          The Drawer of Other Things
+        </div>
+
+        <div class="beyond-item-subtitle">
+          For everything that refuses to fit neatly anywhere else.
+        </div>
+
+      </div>
+
+    </a>
+
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CLOSING
+       ===================================================== -->
+
+  <div class="beyond-closing">
+    There is, apparently, life beyond the regression table.
+  </div>
+
+
+</div>
+
+```

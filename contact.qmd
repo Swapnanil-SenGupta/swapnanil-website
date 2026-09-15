@@ -1,0 +1,118 @@
+﻿---
+---
+
+```{=html}
+
+<div class="contact-page">
+
+  <div class="contact-photo">
+
+    <img
+      src="assets/images/contact-lake.jpg"
+      alt="Lakeside scene in the evening light"
+    >
+    <div class="photo-credit">
+    Photo © Swapnanil SenGupta
+  </div>
+
+  </div>
+
+
+  <div class="contact-content">
+
+  
+
+    <div class="contact-quote">
+      “Home is always a person...”
+    </div>
+
+
+<p class="contact-intro">
+  If you are in Halle or nearby and would like to talk research,
+  explore a collaboration, or meet over
+  <span
+    class="coffee-joke"
+    title="No identification strategy required."
+  >coffee</span>,
+  I would be very happy to hear from you. Books, films, theatre,
+  film-making, scuba, a game of table tennis, or simply a good conversation are all perfectly good reasons to write.
+  If you are farther away, my inbox is always open.
+</p>
+
+    <div class="contact-details">
+
+      <div class="contact-item">
+
+        <div class="contact-icon">
+          <i class="bi bi-geo-alt"></i>
+        </div>
+
+        <div class="contact-item-content">
+
+          <div class="contact-label">
+            Address
+          </div>
+
+          <div class="contact-value">
+            Department of Macroeconomics<br>
+            Halle Institute for Economic Research (IWH)<br>
+            Kleine Märkerstraße 8<br>
+            06108 Halle (Saale), Germany
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <div class="contact-icon">
+          <i class="bi bi-envelope"></i>
+        </div>
+
+        <div class="contact-item-content">
+
+          <div class="contact-label">
+            Email
+          </div>
+
+          <div class="contact-value">
+            <a href="mailto:senguptaswapnanil1@gmail.com">
+              senguptaswapnanil1@gmail.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <div class="contact-icon">
+          <i class="bi bi-telephone"></i>
+        </div>
+
+        <div class="contact-item-content">
+
+          <div class="contact-label">
+            Phone
+          </div>
+
+          <div class="contact-value">
+            <a href="tel:+4915510389203">
+              +49 155 10389203
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```

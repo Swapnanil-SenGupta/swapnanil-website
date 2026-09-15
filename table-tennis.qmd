@@ -1,0 +1,61 @@
+---
+---
+
+```{=html}
+<div class="tt-page">
+
+  <section class="tt-opening">
+
+    <div class="tt-eyebrow">
+      TABLE TENNIS
+    </div>
+
+    <div class="tt-title">
+      Mostly self-taught.<br>
+      <span>Entirely left-handed.</span>
+    </div>
+
+    <div class="tt-rule"></div>
+
+    <div class="tt-story">
+
+      <p>
+        I moved from tennis to table tennis and mostly learnt the old-fashioned
+        way: by playing people much better than me, losing to them, and slowly
+        figuring out why.
+      </p>
+
+      <p>
+        YouTube filled in some of the gaps. Somewhere along the way I picked up
+        a few serves and tricks, including the pendulum, tomahawk and backhand
+        sidespin.
+      </p>
+
+    </div>
+
+<a class="tt-invite" href="contact.html">
+
+  <span class="tt-ball"></span>
+
+  <span class="tt-invite-copy">
+
+    <span class="tt-invite-main">
+      Halle? Up for a game?
+    </span>
+
+    <span class="tt-invite-small">
+      I’m a little out of practice and would be glad to get back into it — whether through regular games or the occasional knock.
+    </span>
+
+  </span>
+
+  <span class="tt-arrow">↗</span>
+
+</a>
+
+   
+
+  </section>
+
+</div>
+```

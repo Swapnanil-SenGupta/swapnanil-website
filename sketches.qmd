@@ -1,0 +1,104 @@
+---
+---
+
+```{=html}
+<div class="sketches-page">
+
+  <header class="sketches-opening">
+
+    <div class="sketches-title">
+      Sketchbook.
+    </div>
+
+    <div class="sketches-intro">
+      I had a little drawing training as a child, mostly because I was too afraid to say no to my mother. Very little
+      of that training survived. I came back to sketching much later for
+      a different reason that it makes me sit still, look longer, and practise
+      patience.
+    </div>
+
+  </header>
+
+
+  <section class="sketches-wall">
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-camp.jpg"
+        alt="Minimal sketch of mountains, a campfire, trees and birds"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-boat.jpg"
+        alt="Ink sketch of a boat at sunset"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-train.jpg"
+        alt="Ink sketch of a steam train"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-torii.jpg"
+        alt="Ink sketch of a torii gate and Japanese landscape"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-gate.jpg"
+        alt="Ink sketch of an old gate beside a wooded path"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-ruin.jpg"
+        alt="Ink sketch of a ruined stone tower"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-solitude.jpg"
+        alt="Ink sketch of a stone building among rocks and trees"
+      >
+    </figure>
+
+
+    <figure class="sketch-card">
+      <img
+        src="assets/images/sketch-railway.jpg"
+        alt="Perspective sketch of railway tracks"
+      >
+    </figure>
+
+  </section>
+
+
+  <footer class="sketches-ending">
+
+    <div class="sketches-ending-mark">
+      ✦
+    </div>
+
+    <p>
+      Turns out, patience can be practised one line at a time.
+    </p>
+
+  </footer>
+
+</div>
+```

@@ -1,0 +1,156 @@
+---
+---
+
+```{=html}
+
+<div class="awards-page">
+
+
+
+
+
+  <!-- RESEARCH SUPPORT -->
+
+  <section class="awards-section">
+
+    <div class="awards-section-label">
+      Research Support
+    </div>
+
+
+    <div class="award-row">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-content">
+
+        <div class="award-name">
+          APC Grant
+        </div>
+
+        <div class="award-institution">
+          Goethe University Frankfurt
+        </div>
+
+      </div>
+
+      <div class="award-amount">
+        €26,462
+      </div>
+
+    </div>
+
+
+    <div class="award-row">
+
+      <div class="award-year">
+        2024
+      </div>
+
+      <div class="award-content">
+
+        <div class="award-name">
+          Research Grant, International Macro Finance Research
+        </div>
+
+        <div class="award-institution">
+          NCAER
+        </div>
+
+      </div>
+
+      <div class="award-amount">
+        €3,600
+      </div>
+
+    </div>
+
+
+    <div class="award-row">
+
+      <div class="award-year">
+        2024
+      </div>
+
+      <div class="award-content">
+
+        <div class="award-name">
+          APC Waiver
+        </div>
+
+        <div class="award-institution">
+          Sage Publishers
+        </div>
+
+      </div>
+
+      <div class="award-amount">
+        ≈ $2,000
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- AWARDS -->
+
+  <section class="awards-section awards-distinction-section">
+
+    <div class="awards-section-label">
+      Awards &amp; Distinctions
+    </div>
+
+
+    <div class="award-row">
+
+      <div class="award-year">
+        2018
+      </div>
+
+      <div class="award-content">
+
+        <div class="award-name">
+          Global Excellence Scholarship
+        </div>
+
+        <div class="award-institution">
+          University of Exeter
+        </div>
+
+      </div>
+
+      <div class="award-amount">
+        £5,000
+      </div>
+
+    </div>
+
+
+    <div class="award-row award-row-no-amount">
+
+      <div class="award-year">
+        2017
+      </div>
+
+      <div class="award-content">
+
+        <div class="award-name">
+          Top scorer, BA Economics
+        </div>
+
+        <div class="award-institution">
+          Bankura Christian College, University of Burdwan
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+```
