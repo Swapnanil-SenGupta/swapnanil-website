@@ -1,0 +1,9892 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+
+:root {
+
+  --ss-blue: #2a5c7f;
+  --ss-dark-blue: #214b67;
+  --ss-light-blue: #7191a6;
+
+  --ss-text: #171717;
+  --ss-muted: #70767b;
+
+  --ss-background: #fdfdfc;
+
+  --ss-border: #dfe6ea;
+
+}
+
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+
+  margin: 0;
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  color:
+    var(--ss-text);
+
+  background:
+    var(--ss-background);
+
+  font-size:
+    1.13rem;
+
+  line-height:
+    1.62;
+
+}
+
+
+main {
+
+  max-width: none;
+
+  padding: 0;
+
+}
+
+
+.home-shell {
+
+  width:
+    min(
+      1160px,
+      calc(100% - 3rem)
+    );
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+
+a {
+
+  color:
+    var(--ss-blue);
+
+  text-decoration:
+    none;
+
+}
+
+
+a:hover {
+
+  color:
+    var(--ss-dark-blue);
+
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+
+.navbar {
+
+  background:
+    var(--ss-background) !important;
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  box-shadow:
+    none !important;
+
+  padding-top:
+    0.55rem;
+
+  padding-bottom:
+    0.55rem;
+
+}
+
+
+/* =========================================================
+   NAVBAR BRAND
+   Homepage = home icon
+   Other pages = Swapnanil SenGupta
+   ========================================================= */
+
+
+/* Normal appearance on Research, CV, Awards, etc. */
+
+.navbar-brand {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  width:
+    auto;
+
+  height:
+    30px;
+
+  margin-right:
+    1rem;
+
+  padding:
+    0;
+
+  overflow:
+    visible;
+
+  color:
+    var(--ss-blue) !important;
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    1.28rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+  text-decoration:
+    none !important;
+
+  transition:
+    color 0.15s ease;
+
+}
+
+
+.navbar-brand:hover {
+
+  color:
+    var(--ss-dark-blue) !important;
+
+}
+
+
+/* =========================================================
+   HOMEPAGE ONLY
+   Hide the name and show the existing home icon
+   ========================================================= */
+
+body.home-page .navbar-brand {
+
+  position:
+    relative;
+
+  display:
+    block;
+
+  width:
+    30px;
+
+  height:
+    30px;
+
+  overflow:
+    hidden;
+
+  font-size:
+    0;
+
+}
+
+
+body.home-page .navbar-brand::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    4px;
+
+  top:
+    4px;
+
+  width:
+    21px;
+
+  height:
+    21px;
+
+  background:
+    var(--ss-blue);
+
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3.2 2.5 11h2.2v9.5h5.2v-6h4.2v6h5.2V11h2.2L12 3.2Z'/%3E%3C/svg%3E")
+    center / contain
+    no-repeat;
+
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3.2 2.5 11h2.2v9.5h5.2v-6h4.2v6h5.2V11h2.2L12 3.2Z'/%3E%3C/svg%3E")
+    center / contain
+    no-repeat;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+
+}
+
+
+body.home-page .navbar-brand:hover::before {
+
+  background:
+    var(--ss-dark-blue);
+
+  transform:
+    translateY(-1px);
+
+}
+
+
+.navbar-nav .nav-link {
+
+  color:
+    var(--ss-text) !important;
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.08rem;
+
+  padding-left:
+    0.85rem !important;
+
+  padding-right:
+    0.85rem !important;
+
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+
+  color:
+    var(--ss-blue) !important;
+
+}
+
+
+.aa-DetachedSearchButtonIcon,
+.aa-SubmitIcon {
+
+  color:
+    var(--ss-blue) !important;
+
+}
+
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+
+.home-hero {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(500px, 1fr)
+    400px;
+
+  column-gap:
+    2.5rem;
+
+  align-items:
+    center;
+
+  padding-top:
+    3rem;
+
+  padding-bottom:
+    4.3rem;
+
+}
+
+
+.home-intro {
+
+  width:
+    100%;
+
+  max-width:
+    680px;
+
+  min-width:
+    0;
+
+}
+
+
+.hero-name {
+
+  margin:
+    0 0 0.35rem 0;
+
+  color:
+    var(--ss-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.5rem,
+      4.15vw,
+      3.9rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.96;
+
+  letter-spacing:
+    -0.035em;
+
+  white-space:
+    nowrap;
+
+}
+
+
+.hero-role {
+
+  margin:
+    0 0 1.55rem 0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.45rem;
+
+  line-height:
+    1.2;
+
+  white-space:
+    nowrap;
+
+}
+
+
+.role-dot {
+
+  margin:
+    0 0.34rem;
+
+  color:
+    var(--ss-light-blue);
+
+}
+
+
+.hero-affiliation {
+
+  margin-bottom:
+    1.85rem;
+
+  line-height:
+    1.4;
+
+}
+
+
+.institution-en {
+
+  display:
+    block;
+
+  color:
+    var(--ss-text);
+
+  font-size:
+    1.14rem;
+
+  font-weight:
+    500;
+
+}
+
+
+.institution-de {
+
+  display:
+    block;
+
+  margin-top:
+    0.18rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+}
+
+
+.home-links {
+
+  display:
+    flex;
+
+  gap:
+    0.8rem;
+
+}
+
+
+.home-button {
+
+  display:
+    inline-block;
+
+  padding:
+    0.5rem 1.12rem;
+
+  border-radius:
+    3px;
+
+  font-size:
+    1.04rem;
+
+  line-height:
+    1.2;
+
+  transition:
+    all 0.15s ease;
+
+}
+
+
+.home-button:hover {
+
+  text-decoration:
+    none;
+
+}
+
+
+.home-button.primary {
+
+  color:
+    #ffffff;
+
+  background:
+    var(--ss-blue);
+
+  border:
+    1px solid var(--ss-blue);
+
+}
+
+
+.home-button.primary:hover {
+
+  color:
+    #ffffff;
+
+  background:
+    var(--ss-dark-blue);
+
+  border-color:
+    var(--ss-dark-blue);
+
+}
+
+
+.home-button.secondary {
+
+  color:
+    var(--ss-dark-blue);
+
+  background:
+    transparent;
+
+  border:
+    1px solid #cbd7dd;
+
+}
+
+
+.home-button.secondary:hover {
+
+  color:
+    var(--ss-blue);
+
+  border-color:
+    var(--ss-blue);
+
+}
+
+
+.home-photo {
+
+  display:
+    flex;
+
+  justify-content:
+    flex-end;
+
+  align-items:
+    center;
+
+  transform:
+    translateX(18px);
+
+}
+
+
+.home-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  max-width:
+    400px;
+
+  aspect-ratio:
+    4 / 5;
+
+  object-fit:
+    cover;
+
+  object-position:
+    center;
+
+  border-radius:
+    7px;
+
+}
+
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+
+.about-layout {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.6fr)
+    minmax(250px, 0.5fr);
+
+  gap:
+    4.8rem;
+
+  align-items:
+    start;
+
+  padding-top:
+    4rem;
+
+  padding-bottom:
+    4rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.about-main h2 {
+
+  margin:
+    0 0 1.4rem 0;
+
+  padding:
+    0;
+
+  border:
+    0 !important;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    2.8rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+  letter-spacing:
+    -0.025em;
+
+}
+
+
+.about-main h2 .anchorjs-link,
+.about-main h2 a.anchorjs-link {
+
+  display:
+    none !important;
+
+}
+
+
+.about-main p {
+
+  max-width:
+    760px;
+
+  margin:
+    0 0 1.2rem 0;
+
+  color:
+    var(--ss-text);
+
+  font-size:
+    1.17rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+.about-main strong {
+
+  font-weight:
+    600;
+
+}
+
+
+
+/* =========================================================
+   RESEARCH INTERESTS
+   ========================================================= */
+
+
+.research-sidebar {
+
+  margin-top:
+    1.65rem;
+
+  padding-left:
+    1.55rem;
+
+  border-left:
+    4px solid var(--ss-blue);
+
+}
+
+
+.research-sidebar h3 {
+
+  margin:
+    0 0 1.15rem 0;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.05rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.065em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.interest-list {
+
+  margin:
+    0;
+
+  padding-left:
+    1.1rem;
+
+}
+
+
+.interest-list li {
+
+  margin-bottom:
+    0.65rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    1.18rem;
+
+  line-height:
+    1.3;
+
+}
+
+
+
+/* =========================================================
+   WHAT I'M UP TO
+   ========================================================= */
+
+
+.working-section {
+
+  padding-top:
+    4.1rem;
+
+  padding-bottom:
+    4.4rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.working-section h2 {
+
+  margin:
+    0 0 1.9rem 0;
+
+  padding:
+    0;
+
+  border:
+    0 !important;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    2.85rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+  letter-spacing:
+    -0.025em;
+
+}
+
+
+.working-section h2 .anchorjs-link,
+.working-section h2 a.anchorjs-link {
+
+  display:
+    none !important;
+
+}
+
+
+.project-entry {
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+}
+
+
+.project-entry summary {
+
+  display:
+    flex;
+
+  align-items:
+    flex-start;
+
+  padding:
+    1.45rem 0;
+
+  cursor:
+    pointer;
+
+  list-style:
+    none;
+
+}
+
+
+.project-entry summary::-webkit-details-marker {
+
+  display:
+    none;
+
+}
+
+
+.project-entry summary::before {
+
+  content:
+    "▸";
+
+  flex:
+    0 0 auto;
+
+  margin-right:
+    0.9rem;
+
+  padding-top:
+    0.05rem;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.1rem;
+
+}
+
+
+.project-entry[open] summary::before {
+
+  content:
+    "▾";
+
+}
+
+
+.project-heading {
+
+  transition:
+    transform 0.15s ease;
+
+}
+
+
+.project-entry summary:hover .project-heading {
+
+  transform:
+    translateX(4px);
+
+}
+
+
+.project-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    1.48rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.25;
+
+  transition:
+    color 0.15s ease;
+
+}
+
+
+.project-entry summary:hover .project-title {
+
+  color:
+    var(--ss-blue);
+
+}
+
+
+.project-meta {
+
+  margin-top:
+    0.22rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+}
+
+
+.project-description {
+
+  max-width:
+    800px;
+
+  padding:
+    0 0 1.6rem 2rem;
+
+  color:
+    var(--ss-text);
+
+  font-size:
+    1.07rem;
+
+  line-height:
+    1.65;
+
+}
+
+
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+
+.education-section {
+
+  padding-top:
+    1.55rem;
+
+  padding-bottom:
+    1.8rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.education-section h3 {
+
+  margin:
+    0 0 0.75rem 0;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    0.84rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.065em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.education-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap:
+    1.15rem;
+
+}
+
+
+.education-degree {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    0.91rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.15;
+
+}
+
+
+.education-detail {
+
+  margin-top:
+    0.04rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.78rem;
+
+  line-height:
+    1.15;
+
+}
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+
+.home-footer {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  gap:
+    1.2rem;
+
+  padding-top:
+    3rem;
+
+  padding-bottom:
+    3rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.social-links {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    1.5rem;
+
+}
+
+
+.social-links a {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  width:
+    52px;
+
+  height:
+    52px;
+
+  color:
+    var(--ss-blue);
+
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease,
+    opacity 0.15s ease;
+
+}
+
+
+.social-links a:hover {
+
+  color:
+    var(--ss-dark-blue);
+
+  transform:
+    translateY(-3px) scale(1.06);
+
+}
+
+
+.social-links img {
+
+  width:
+    38px;
+
+  height:
+    38px;
+
+  object-fit:
+    contain;
+
+}
+
+
+.bootstrap-social i {
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    2.25rem;
+
+  line-height:
+    1;
+
+}
+
+
+.bootstrap-social:hover i {
+
+  color:
+    var(--ss-dark-blue);
+
+}
+
+
+.footer-text {
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.94rem;
+
+}
+
+
+.footer-divider {
+
+  margin:
+    0 0.42rem;
+
+  color:
+    #a5aaad;
+
+}
+
+
+
+/* =========================================================
+   CV PAGE
+   ========================================================= */
+
+
+.cv-card-page {
+
+  width:
+    min(
+      980px,
+      calc(100% - 3rem)
+    );
+
+  margin:
+    0 auto;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    0.82fr 1.18fr;
+
+  gap:
+    5rem;
+
+  align-items:
+    start;
+
+  padding-top:
+    4.5rem;
+
+  padding-bottom:
+    5rem;
+
+}
+
+
+/* Photograph: intentionally secondary */
+
+.cv-card-photo {
+
+  display:
+    flex;
+
+  justify-content:
+    flex-end;
+
+  padding-top:
+    4.6rem;
+
+}
+
+
+.cv-card-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  max-width:
+    330px;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+}
+
+
+/* Right side */
+
+.cv-card-content {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    flex-start;
+
+}
+
+
+/* Main page heading */
+
+.cv-card-content h1 {
+
+  margin:
+    0 0 1.6rem 0;
+
+  padding:
+    0;
+
+  border:
+    0 !important;
+
+  color:
+    var(--ss-blue) !important;
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    4.5rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    0.92;
+
+  letter-spacing:
+    -0.04em;
+
+}
+
+.cv-card-content h1,
+.cv-card-content h1 * {
+  color: var(--ss-blue) !important;
+}
+
+
+
+
+/* Actual PDF first-page preview */
+
+.cv-live-preview {
+
+  position:
+    relative;
+
+  width:
+    330px;
+
+  height:
+    375px;
+
+  overflow:
+    hidden;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid var(--ss-border);
+
+  border-radius:
+    5px;
+
+  box-shadow:
+    0 4px 16px rgba(33, 75, 103, 0.05);
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+
+}
+
+
+.cv-live-preview iframe {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  width:
+    100%;
+
+  height:
+    470px;
+
+  border:
+    0;
+
+  pointer-events:
+    none;
+
+}
+
+
+.cv-preview-link {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  z-index:
+    3;
+
+}
+
+
+.cv-preview-label {
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  bottom:
+    0;
+
+  z-index:
+    2;
+
+  padding:
+    0.48rem;
+
+  color:
+    #ffffff;
+
+  background:
+    rgba(33, 75, 103, 0.92);
+
+  font-size:
+    0.95rem;
+
+  text-align:
+    center;
+
+  opacity:
+    0;
+
+  transform:
+    translateY(100%);
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+
+}
+
+
+.cv-live-preview:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    var(--ss-blue);
+
+  box-shadow:
+    0 10px 26px rgba(33, 75, 103, 0.10);
+
+}
+
+
+.cv-live-preview:hover .cv-preview-label {
+
+  opacity:
+    1;
+
+  transform:
+    translateY(0);
+
+}
+
+
+/* Download button */
+
+.cv-card-download {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.5rem;
+
+  margin-top:
+    1rem;
+
+  padding:
+    0.52rem 1rem;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--ss-blue);
+
+  border:
+    1px solid var(--ss-blue);
+
+  border-radius:
+    3px;
+
+  font-size:
+    1.03rem;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+
+}
+
+
+.cv-card-download:hover {
+
+  color:
+    #ffffff;
+
+  background:
+    var(--ss-dark-blue);
+
+  transform:
+    translateY(-1px);
+
+  text-decoration:
+    none;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+  .cv-card-page {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.5rem;
+
+    padding-top:
+      3rem;
+
+  }
+
+
+  .cv-card-photo {
+
+    justify-content:
+      flex-start;
+
+    padding-top:
+      0;
+
+  }
+
+
+  .cv-card-photo img {
+
+    max-width:
+      320px;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .cv-card-page {
+
+    width:
+      calc(100% - 2rem);
+
+  }
+
+
+  .cv-card-content h1 {
+
+    font-size:
+      3rem;
+
+  }
+
+
+  .cv-live-preview {
+
+    width:
+      min(330px, 100%);
+
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+
+@media (max-width: 650px) {
+
+
+  .home-shell {
+
+    width:
+      calc(100% - 2rem);
+
+  }
+
+
+  .hero-name {
+
+    font-size:
+      3.2rem;
+
+  }
+
+
+  .hero-role {
+
+    font-size:
+      1.27rem;
+
+  }
+
+
+  .home-photo img {
+
+    max-width:
+      100%;
+
+  }
+
+
+  .about-main h2,
+  .working-section h2 {
+
+    font-size:
+      2.35rem;
+
+  }
+
+
+  .education-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .social-links {
+
+    gap:
+      0.75rem;
+
+  }
+
+
+  .social-links a {
+
+    width:
+      43px;
+
+    height:
+      43px;
+
+  }
+
+
+  .social-links img {
+
+    width:
+      32px;
+
+    height:
+      32px;
+
+  }
+
+
+  .bootstrap-social i {
+
+    font-size:
+      1.95rem;
+
+  }
+
+
+  .footer-text {
+
+    text-align:
+      center;
+
+    line-height:
+      1.6;
+
+  }
+
+
+  /* CV */
+
+  .cv-page {
+
+    width:
+      calc(100% - 2rem);
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2rem;
+
+    padding-top:
+      2rem;
+
+  }
+
+
+  .cv-photo-column {
+
+    position:
+      static;
+
+  }
+
+
+  .cv-page-photo {
+
+    max-width:
+      340px;
+
+  }
+
+
+  .cv-download-row {
+
+    justify-content:
+      flex-start;
+
+  }
+
+
+  .cv-pdf iframe {
+
+    height:
+      700px;
+
+    min-height:
+      700px;
+
+  }
+
+}
+
+/* =========================================================
+   FINAL CV TITLE FIX
+   ========================================================= */
+
+/* Hide any title Quarto may be generating outside our layout */
+#title-block-header,
+.quarto-title-block,
+header.quarto-title-block,
+.quarto-title > h1,
+h1.title {
+  display: none !important;
+}
+
+
+/* Our own CV heading */
+.cv-custom-title {
+  color: var(--ss-blue) !important;
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif !important;
+
+  font-size: 3.75rem !important;
+  font-weight: 600 !important;
+
+  line-height: 0.95 !important;
+  letter-spacing: -0.035em !important;
+
+  white-space: nowrap !important;
+
+  margin: 0 0 1.45rem 0 !important;
+  padding: 0 !important;
+}
+
+
+/* Bring the whole CV composition up */
+.cv-card-page {
+  padding-top: 2.6rem !important;
+}
+
+
+/* Remove unnecessary vertical offset on the photograph */
+.cv-card-photo {
+  padding-top: 4.4rem !important;
+}
+
+/* =========================================================
+   AWARDS & RESEARCH SUPPORT
+   ========================================================= */
+
+
+.awards-page {
+
+  width:
+    min(
+      940px,
+      calc(100% - 3rem)
+    );
+
+  margin:
+    0 auto;
+
+  padding-top:
+    3.4rem;
+
+  padding-bottom:
+    5rem;
+
+}
+
+
+/* Main heading */
+
+
+.awards-header {
+
+  margin-bottom:
+    4rem;
+
+}
+
+
+.awards-title {
+
+  display:
+    inline-block;
+
+  color:
+    var(--ss-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.7rem,
+      5vw,
+      4.7rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.95;
+
+  letter-spacing:
+    -0.04em;
+
+  cursor:
+    default;
+
+}
+
+
+/* Sections */
+
+
+.awards-section {
+
+  margin-bottom:
+    4.2rem;
+
+}
+
+
+.awards-section-label {
+
+  margin-bottom:
+    1.6rem;
+
+  color:
+    var(--ss-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    2.45rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+  letter-spacing:
+    -0.025em;
+
+  text-transform:
+    none;
+
+}
+
+.awards-distinction-section {
+
+  padding-top:
+    2.4rem;
+
+ 
+
+}
+
+/* Individual entries */
+
+
+.award-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) auto;
+  column-gap: 2rem;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+
+/* Year */
+
+
+.award-year {
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.05rem;
+
+  font-weight:
+    500;
+
+  font-variant-numeric:
+    tabular-nums;
+
+}
+
+
+/* Main description */
+
+
+.award-content {
+
+  min-width:
+    0;
+
+}
+
+
+.award-name {
+
+  color:
+    #30383d;
+
+  font-size:
+    1.3rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.25;
+
+}
+
+
+.award-institution {
+
+  margin-top:
+    0.15rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.3;
+
+}
+
+
+/* Amount */
+
+.award-amount {
+
+  min-width:
+    92px;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.08rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.2;
+
+  text-align:
+    right;
+
+  white-space:
+    nowrap;
+
+  font-variant-numeric:
+    tabular-nums;
+
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+
+}
+
+
+.award-row:hover .award-amount {
+
+  color:
+    var(--ss-dark-blue);
+
+  transform:
+    translateX(-2px);
+
+}
+
+
+/* Row without money */
+
+
+.award-row-no-amount {
+
+  grid-template-columns:
+    72px minmax(0, 1fr);
+
+}
+
+
+/* =========================================================
+   AWARDS RESPONSIVE
+   ========================================================= */
+
+
+@media (max-width: 700px) {
+
+  .awards-page {
+
+    width:
+      calc(100% - 2rem);
+
+    padding-top:
+      3rem;
+
+  }
+
+
+  .awards-title {
+
+    font-size:
+      3.25rem;
+
+  }
+
+
+  .awards-header {
+
+    margin-bottom:
+      3rem;
+
+  }
+
+
+  .award-row {
+
+    grid-template-columns:
+      52px minmax(0, 1fr);
+
+    column-gap:
+      1.2rem;
+
+    row-gap:
+      0.75rem;
+
+    align-items:
+      start;
+
+  }
+
+
+  .award-amount {
+
+    grid-column:
+      2;
+
+    justify-self:
+      start;
+
+  }
+
+
+  .award-row-no-amount {
+
+    grid-template-columns:
+      52px minmax(0, 1fr);
+
+  }
+
+}
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+
+.contact-page {
+
+  width:
+    min(
+      1100px,
+      calc(100% - 3rem)
+    );
+
+  margin:
+    0 auto;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(320px, 0.9fr)
+    minmax(0, 1.1fr);
+
+  gap:
+    5.5rem;
+
+  /* Important: do not vertically centre the two columns */
+  align-items:
+    start;
+
+  padding-top:
+    2.8rem;
+
+  padding-bottom:
+    5rem;
+
+}
+
+
+/* =========================================================
+   PHOTOGRAPH
+   ========================================================= */
+
+
+.contact-photo {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    flex-end;
+
+  justify-content:
+    flex-start;
+
+  padding-top:
+    4.8rem;
+
+}
+
+.contact-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  max-width:
+    640px;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+
+.contact-content {
+
+  max-width:
+    560px;
+
+}
+
+
+.contact-kicker {
+
+  margin-bottom:
+    1.15rem;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    0.95rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.08em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+/* Quote */
+
+
+.contact-quote {
+
+  margin-top:
+    0;
+
+  margin-bottom:
+    1.8rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      2.65rem,
+      4vw,
+      3.7rem
+    );
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.02;
+
+  letter-spacing:
+    -0.03em;
+
+}
+
+
+/* Intro */
+
+
+.contact-intro {
+
+  max-width:
+    535px;
+
+  margin:
+    0 0 2.6rem 0;
+
+  color:
+    var(--ss-text);
+
+  font-size:
+    1.18rem;
+
+  line-height:
+    1.65;
+
+}
+
+
+.coffee-joke {
+
+  color:
+    var(--ss-blue);
+
+  cursor:
+    help;
+
+  border-bottom:
+    1px dotted var(--ss-light-blue);
+
+}
+
+
+/* =========================================================
+   CONTACT DETAILS
+   ========================================================= */
+
+
+.contact-details {
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.contact-item {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    30px minmax(0, 1fr);
+
+  gap:
+    1rem;
+
+  align-items:
+    start;
+
+  padding:
+    1.15rem 0 1.35rem 0;
+
+}
+
+
+.contact-icon {
+
+  padding-top:
+    0.08rem;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.15rem;
+
+}
+
+
+.contact-label {
+
+  margin-bottom:
+    0.18rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.84rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.055em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.contact-value {
+
+  color:
+    var(--ss-text);
+
+  font-size:
+    1.08rem;
+
+  line-height:
+    1.45;
+
+}
+
+
+.contact-value a {
+
+  color:
+    var(--ss-blue);
+
+  text-decoration:
+    none;
+
+}
+
+
+.contact-value a:hover {
+
+  color:
+    var(--ss-dark-blue);
+
+}
+
+
+/* =========================================================
+   CONTACT RESPONSIVE
+   ========================================================= */
+
+
+@media (max-width: 850px) {
+
+  .contact-page {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      3rem;
+
+    align-items:
+      start;
+
+  }
+
+
+  .contact-photo {
+
+    align-items:
+      flex-start;
+
+    padding-top:
+      0;
+
+  }
+
+
+  .contact-photo img {
+
+    max-width:
+      380px;
+
+  }
+
+
+  .contact-content {
+
+    max-width:
+      620px;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .contact-page {
+
+    width:
+      calc(100% - 2rem);
+
+    padding-top:
+      2.8rem;
+
+  }
+
+
+  .contact-photo img {
+
+    max-width:
+      100%;
+
+  }
+
+
+  .contact-quote {
+
+    font-size:
+      2.6rem;
+
+  }
+
+
+  .contact-intro {
+
+    font-size:
+      1.1rem;
+
+  }
+
+}
+
+/* =========================================================
+   RESEARCH PAGE
+   Replace the entire existing Research CSS section with this block.
+   ========================================================= */
+
+.research-page {
+  width: min(1040px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding-top: 3.4rem;
+  padding-bottom: 5rem;
+}
+
+/* =========================================================
+   RESEARCH INTRO
+   ========================================================= */
+
+.research-hero {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 3.4rem;
+  align-items: center;
+  padding-bottom: 3.6rem;
+  border-bottom: 1px solid var(--ss-border);
+}
+
+.research-hero-photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.research-hero-photo img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.research-hero-text {
+  min-width: 0;
+}
+
+.research-statement {
+  max-width: 720px;
+  color: var(--ss-dark-blue);
+  font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+  font-size: clamp(2.15rem, 3vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+/* =========================================================
+   PUBLISHER FOOTPRINT
+   ========================================================= */
+
+.publisher-footprint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.38rem;
+  margin-top: 1.05rem;
+  color: var(--ss-muted);
+  font-size: 0.91rem;
+  line-height: 1.4;
+}
+
+.publisher-label {
+  margin-right: 0.35rem;
+  color: var(--ss-muted);
+  font-style: italic;
+}
+
+.publisher-item {
+  white-space: nowrap;
+}
+
+.publisher-item strong {
+  color: var(--ss-blue);
+  font-weight: 600;
+}
+
+.publisher-dot {
+  color: #aab2b7;
+}
+
+/* =========================================================
+   COLLAPSIBLE RESEARCH GROUPS
+   ========================================================= */
+
+.research-group {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--ss-border);
+}
+
+.research-group:first-of-type {
+  margin-top: 2.8rem;
+}
+
+.research-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  padding: 1.5rem 0;
+  color: var(--ss-blue);
+  font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.research-group-heading::-webkit-details-marker {
+  display: none;
+}
+
+.research-group-heading::before {
+  content: "▸";
+  flex: 0 0 auto;
+  margin-right: 0.2rem;
+  color: var(--ss-light-blue);
+  font-size: 1rem;
+  transform: translateY(1px);
+}
+
+.research-group[open] > .research-group-heading::before {
+  content: "▾";
+}
+
+.research-group-heading:hover {
+  color: var(--ss-dark-blue);
+}
+
+.research-group-count {
+  margin-left: 0.15rem;
+  color: var(--ss-light-blue);
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.research-group-body {
+  padding: 0.35rem 0 1.3rem 0;
+}
+
+/* =========================================================
+   PUBLICATION ENTRIES
+   ========================================================= */
+
+.publication-item {
+  position: relative;
+  margin: 0;
+  padding: 1.25rem 0;
+  transition: transform 0.15s ease;
+}
+
+.publication-item:hover {
+  transform: translateX(2px);
+}
+
+.publication-citation {
+  max-width: 920px;
+  color: #3d4347;
+  font-size: 1.13rem;
+  line-height: 1.55;
+}
+
+.publication-authors {
+  color: #41474b;
+}
+
+.publication-authors strong {
+  color: var(--ss-blue);
+  font-weight: 600;
+}
+
+/* Paper title: blue, but intentionally NOT bold */
+.publication-title {
+  color: var(--ss-dark-blue);
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.publication-item:hover .publication-title {
+  color: var(--ss-blue);
+}
+
+.publication-citation em {
+  color: #555d62;
+  font-weight: 400;
+}
+
+/* DOI / PDF / Download / Link now sits inline at the end of the citation */
+.publication-link {
+  display: inline;
+  margin-left: 0.45rem;
+  padding: 0;
+  color: var(--ss-blue);
+  font-size: 0.93em;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(42, 92, 127, 0.28);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.publication-link:hover {
+  color: var(--ss-dark-blue);
+  border-color: var(--ss-dark-blue);
+}
+
+/* Retained only so any old hidden tag markup cannot reappear */
+.publication-meta,
+.research-tag {
+  display: none !important;
+}
+
+/* =========================================================
+   ABSTRACT DROPDOWNS
+   ========================================================= */
+
+.publication-abstract {
+  max-width: 850px;
+  margin-top: 0.5rem;
+}
+
+.publication-abstract summary {
+  display: inline-block;
+  color: var(--ss-muted);
+  font-size: 0.91rem;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.publication-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-abstract summary::before {
+  content: "▸";
+  margin-right: 0.38rem;
+  color: var(--ss-light-blue);
+}
+
+.publication-abstract[open] summary::before {
+  content: "▾";
+}
+
+.publication-abstract summary:hover {
+  color: var(--ss-blue);
+}
+
+.publication-abstract p {
+  max-width: 810px;
+  margin: 0.65rem 0 0 0;
+  padding: 0.8rem 1rem;
+  color: var(--ss-muted);
+  background: rgba(42, 92, 127, 0.025);
+  border-radius: 4px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .research-hero {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 2.6rem;
+  }
+
+  .research-hero-photo img {
+    max-width: 200px;
+  }
+
+  .research-statement {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .research-page {
+    width: calc(100% - 2rem);
+    padding-top: 2.6rem;
+  }
+
+  .research-hero {
+    grid-template-columns: 1fr;
+    gap: 1.7rem;
+  }
+
+  .research-hero-photo img {
+    max-width: 210px;
+  }
+
+  .research-statement {
+    font-size: 2.15rem;
+  }
+
+  .publisher-footprint {
+    font-size: 0.87rem;
+  }
+
+  .research-group-heading {
+    font-size: 1.9rem;
+  }
+
+  .research-group-count {
+    font-size: 1.05rem;
+  }
+
+  .publication-citation {
+    font-size: 1.08rem;
+  }
+
+  .publication-item:hover {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   BEYOND ECONOMICS
+   ========================================================= */
+
+
+/*
+   This page deliberately breaks out of Quarto's normal
+   narrow content column. Beyond Economics is allowed to
+   feel more editorial and less formally academic.
+*/
+
+.beyond-page {
+
+  width:
+    min(
+      1600px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding-top:
+    2.7rem;
+
+  padding-bottom:
+    5rem;
+
+}
+
+
+/* =========================================================
+   EDITORIAL HERO
+   ========================================================= */
+
+
+.beyond-hero {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(12, minmax(0, 1fr));
+
+  column-gap:
+    1.7rem;
+
+  row-gap:
+    0;
+
+  align-items:
+    start;
+
+  width:
+    100%;
+
+}
+
+
+/* =========================================================
+   PHOTOGRAPHS
+   ========================================================= */
+
+
+.beyond-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 34px rgba(33, 75, 103, 0.06);
+
+}
+
+
+/*
+   London photograph:
+   tall visual anchor on the upper-left.
+*/
+
+.beyond-photo-london {
+
+  grid-column:
+    1 / 4;
+
+  grid-row:
+    1 / 3;
+
+  width:
+    100%;
+
+  max-width:
+    390px;
+
+  justify-self:
+    start;
+
+  margin-top:
+    0.8rem;
+
+  margin-left:
+    0.3rem;
+
+  transform:
+    rotate(-0.45deg);
+
+  z-index:
+    1;
+
+}
+
+
+/*
+   Dog photograph:
+   horizontal cinematic counterweight on the right.
+*/
+
+.beyond-photo-dog {
+
+  grid-column:
+    7 / 13;
+
+  grid-row:
+    2;
+
+  width:
+    100%;
+
+  max-width:
+    800px;
+
+  justify-self:
+    end;
+
+  margin-top:
+    1.3rem;
+
+  margin-right:
+    0.2rem;
+
+  transform:
+    rotate(0.4deg);
+
+  z-index:
+    2;
+
+}
+
+
+/* =========================================================
+   OPENING COPY
+   ========================================================= */
+
+
+.beyond-hero-copy {
+
+  grid-column:
+    4 / 11;
+
+  grid-row:
+    1;
+
+  padding-top:
+    2.3rem;
+
+  padding-left:
+    0.8rem;
+
+}
+
+
+.beyond-opening-line {
+
+  max-width:
+    900px;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.8rem,
+      4.6vw,
+      5.35rem
+    );
+
+  font-weight:
+    600;
+
+  font-style:
+    italic;
+
+  line-height:
+    0.94;
+
+  letter-spacing:
+    -0.045em;
+
+}
+
+
+.beyond-hero-intro {
+
+  max-width:
+    690px;
+
+  margin:
+    2.25rem 0 0 0;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.22rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+/* =========================================================
+   REFLECTION
+   ========================================================= */
+
+
+.beyond-reflection {
+
+  grid-column:
+    2 / 12;
+
+  grid-row:
+    3;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(0, 0.92fr);
+
+  gap:
+    5.5rem;
+
+  align-items:
+    start;
+
+  margin-top:
+    4.2rem;
+
+  padding-top:
+    2.8rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.beyond-reflection-main {
+
+  max-width:
+    680px;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.2rem;
+
+  line-height:
+    1.72;
+
+}
+
+
+.beyond-reflection-main p {
+
+  margin:
+    0;
+
+}
+
+
+.beyond-question {
+
+  max-width:
+    560px;
+
+  margin:
+    0;
+
+  padding-left:
+    1.5rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  border-left:
+    3px solid var(--ss-light-blue);
+
+  font-size:
+    1.31rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.58;
+
+}
+
+
+/* =========================================================
+   PERSONAL INDEX
+   ========================================================= */
+
+
+.beyond-index {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  column-gap:
+    3rem;
+
+  row-gap:
+    0;
+
+  width:
+    100%;
+
+  margin-top:
+    6.5rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.beyond-item {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    34px minmax(0, 1fr);
+
+  column-gap:
+    1rem;
+
+  align-items:
+    start;
+
+  min-width:
+    0;
+
+  padding:
+    2.2rem 0;
+
+  color:
+    inherit;
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.16s ease;
+
+}
+
+
+.beyond-item:hover {
+
+  color:
+    inherit;
+
+  text-decoration:
+    none;
+
+  transform:
+    translateX(4px);
+
+}
+
+
+.beyond-item-number {
+
+  padding-top:
+    0.37rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.84rem;
+
+  font-weight:
+    500;
+
+  font-variant-numeric:
+    tabular-nums;
+
+}
+
+
+.beyond-item-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    2.08rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.04;
+
+  letter-spacing:
+    -0.025em;
+
+  transition:
+    color 0.15s ease;
+
+}
+
+
+.beyond-item:hover .beyond-item-title {
+
+  color:
+    var(--ss-blue);
+
+}
+
+
+.beyond-item-subtitle {
+
+  max-width:
+    370px;
+
+  margin-top:
+    0.52rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.04rem;
+
+  line-height:
+    1.44;
+
+}
+
+
+/* =========================================================
+   CLOSING
+   ========================================================= */
+
+
+.beyond-closing {
+
+  margin-top:
+    5rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+  text-align:
+    center;
+
+}
+
+
+/* =========================================================
+   MEDIUM SCREENS
+   ========================================================= */
+
+
+@media (max-width: 1100px) {
+
+  .beyond-page {
+
+    width:
+      calc(100vw - 2rem);
+
+  }
+
+
+  .beyond-hero {
+
+    grid-template-columns:
+      repeat(8, minmax(0, 1fr));
+
+    column-gap:
+      1.4rem;
+
+  }
+
+
+  .beyond-photo-london {
+
+    grid-column:
+      1 / 4;
+
+    width:
+      100%;
+
+    max-width:
+      320px;
+
+  }
+
+
+  .beyond-hero-copy {
+
+    grid-column:
+      4 / 9;
+
+    padding-left:
+      0;
+
+  }
+
+
+  .beyond-opening-line {
+
+    font-size:
+      clamp(
+        3.2rem,
+        5.5vw,
+        4.4rem
+      );
+
+  }
+
+
+  .beyond-photo-dog {
+
+    grid-column:
+      4 / 9;
+
+    max-width:
+      620px;
+
+  }
+
+
+  .beyond-reflection {
+
+    grid-column:
+      1 / 9;
+
+    gap:
+      3rem;
+
+  }
+
+
+  .beyond-index {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    column-gap:
+      2.5rem;
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+
+@media (max-width: 700px) {
+
+  .beyond-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2rem;
+
+  }
+
+
+  .beyond-hero {
+
+    display:
+      flex;
+
+    flex-direction:
+      column;
+
+    gap:
+      0;
+
+  }
+
+
+  .beyond-photo-london {
+
+    order:
+      1;
+
+    width:
+      72%;
+
+    max-width:
+      330px;
+
+    margin:
+      0;
+
+    transform:
+      rotate(-0.35deg);
+
+  }
+
+
+  .beyond-hero-copy {
+
+    order:
+      2;
+
+    padding:
+      0;
+
+    margin-top:
+      3rem;
+
+  }
+
+
+  .beyond-opening-line {
+
+    font-size:
+      3.3rem;
+
+  }
+
+
+  .beyond-hero-intro {
+
+    font-size:
+      1.12rem;
+
+  }
+
+
+  .beyond-photo-dog {
+
+    order:
+      3;
+
+    width:
+      92%;
+
+    max-width:
+      none;
+
+    margin:
+      2.7rem 0 0 auto;
+
+    transform:
+      rotate(0.3deg);
+
+  }
+
+
+  .beyond-reflection {
+
+    order:
+      4;
+
+    display:
+      grid;
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.1rem;
+
+    width:
+      100%;
+
+    margin-top:
+      3.4rem;
+
+    padding-top:
+      2.3rem;
+
+  }
+
+
+  .beyond-reflection-main {
+
+    font-size:
+      1.12rem;
+
+  }
+
+
+  .beyond-question {
+
+    padding-left:
+      1.1rem;
+
+    font-size:
+      1.2rem;
+
+  }
+
+
+  .beyond-index {
+
+    grid-template-columns:
+      1fr;
+
+    margin-top:
+      4.8rem;
+
+  }
+
+
+  .beyond-item {
+
+    padding:
+      1.85rem 0;
+
+  }
+
+
+  .beyond-item-title {
+
+    font-size:
+      1.85rem;
+
+  }
+
+
+  .beyond-closing {
+
+    margin-top:
+      4rem;
+
+  }
+
+}
+
+
+
+/* =========================================================
+   APPLICATION DESK PAGE
+   Compact horizontal editorial layout
+   ========================================================= */
+
+
+   .application-photo-credit {
+
+  text-align:
+    right;
+
+}
+
+.application-page {
+
+  width:
+    min(
+      1450px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    2.6rem 0 3.5rem 0;
+
+}
+
+
+/* =========================================================
+   MAIN COMPOSITION
+   ========================================================= */
+
+
+.application-hero {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(360px, 0.8fr)
+    minmax(0, 1.55fr);
+
+  gap:
+    4.8rem;
+
+  align-items:
+    center;
+
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+
+.application-image-wrap {
+
+  width:
+    100%;
+
+}
+
+
+.application-image {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    8px;
+
+  box-shadow:
+    0 10px 30px rgba(33, 75, 103, 0.08);
+
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+
+.application-copy {
+
+  width:
+    100%;
+
+  max-width:
+    820px;
+
+}
+
+
+.application-title {
+
+  margin:
+    0;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.6rem,
+      4.7vw,
+      5rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.95;
+
+  letter-spacing:
+    -0.04em;
+
+}
+
+
+.application-text {
+
+  max-width:
+    780px;
+
+  margin-top:
+    1.8rem;
+
+}
+
+
+.application-text p {
+
+  margin:
+    0;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.2rem;
+
+  line-height:
+    1.65;
+
+}
+
+
+/* =========================================================
+   DOWNLOAD + NOTE
+   ========================================================= */
+
+
+.application-bottom-row {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    1.4rem;
+
+  margin-top:
+    2rem;
+
+}
+
+
+.application-download-btn {
+
+  flex:
+    0 0 auto;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    0.62rem 1.25rem;
+
+  color:
+    #ffffff !important;
+
+  background:
+    var(--ss-blue);
+
+  border:
+    1px solid var(--ss-blue);
+
+  border-radius:
+    4px;
+
+  font-size:
+    1.04rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.2;
+
+  text-decoration:
+    none !important;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+
+}
+
+
+.application-download-btn:hover {
+
+  color:
+    #ffffff !important;
+
+  background:
+    var(--ss-dark-blue);
+
+  transform:
+    translateY(-1px);
+
+}
+
+
+.application-note {
+
+  max-width:
+    520px;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.98rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.4;
+
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+
+.application-contact-line {
+
+  margin-top:
+    1.3rem;
+
+  color:
+    #3d4347;
+
+  font-size:
+    1.07rem;
+
+  line-height:
+    1.5;
+
+}
+
+
+.application-contact-line a {
+
+  color:
+    var(--ss-blue);
+
+  font-weight:
+    600;
+
+  text-decoration:
+    none;
+
+  border-bottom:
+    1px solid rgba(42, 92, 127, 0.28);
+
+}
+
+
+.application-contact-line a:hover {
+
+  color:
+    var(--ss-dark-blue);
+
+  border-color:
+    var(--ss-dark-blue);
+
+}
+
+
+/* =========================================================
+   MEDIUM SCREENS
+   ========================================================= */
+
+
+@media (max-width: 950px) {
+
+  .application-page {
+
+    width:
+      calc(100vw - 2rem);
+
+  }
+
+
+  .application-hero {
+
+    grid-template-columns:
+      minmax(280px, 0.8fr)
+      minmax(0, 1.2fr);
+
+    gap:
+      2.5rem;
+
+  }
+
+
+  .application-image {
+
+    height:
+      430px;
+
+  }
+
+
+  .application-title {
+
+    font-size:
+      3.4rem;
+
+  }
+
+
+  .application-text p {
+
+    font-size:
+      1.1rem;
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+
+@media (max-width: 650px) {
+
+  .application-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2rem;
+
+  }
+
+
+  .application-hero {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2rem;
+
+  }
+
+
+  .application-image-wrap {
+
+    max-width:
+      100%;
+
+  }
+
+
+  .application-image {
+
+    height:
+      390px;
+
+  }
+
+
+  .application-title {
+
+    font-size:
+      3rem;
+
+  }
+
+
+  .application-bottom-row {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+    gap:
+      0.8rem;
+
+  }
+
+}
+
+
+/* =========================================================
+   TABLE TENNIS
+   ========================================================= */
+
+.tt-page {
+
+  width:
+    min(
+      1320px,
+      calc(100vw - 4rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    3.4rem 0 4rem;
+
+}
+
+
+/* Main horizontal composition */
+
+.tt-opening {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(420px, 0.92fr)
+    minmax(0, 1.08fr);
+
+  column-gap:
+    6rem;
+
+  row-gap:
+    0;
+
+  align-items:
+    start;
+
+}
+
+
+/* Small section marker */
+
+.tt-eyebrow {
+
+  grid-column:
+    1;
+
+  margin:
+    0 0 1.15rem 0;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.88rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.13em;
+
+}
+
+
+/* Big typographic element */
+
+.tt-title {
+
+  grid-column:
+    1;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.7rem,
+      4.6vw,
+      5.3rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.94;
+
+  letter-spacing:
+    -0.045em;
+
+}
+
+
+.tt-title span {
+
+  color:
+    var(--ss-blue);
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+}
+
+
+/* Small blue stroke underneath heading */
+
+.tt-rule {
+
+  grid-column:
+    1;
+
+  width:
+    86px;
+
+  height:
+    3px;
+
+  margin-top:
+    2.1rem;
+
+  background:
+    var(--ss-blue);
+
+  border-radius:
+    2px;
+
+}
+
+
+/* Story occupies right side */
+
+.tt-story {
+
+  grid-column:
+    2;
+
+  grid-row:
+    1 / span 3;
+
+  align-self:
+    center;
+
+  max-width:
+    660px;
+
+  padding-top:
+    0.2rem;
+
+}
+
+
+.tt-story p {
+
+  margin:
+    0 0 1.35rem 0;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.22rem;
+
+  line-height:
+    1.67;
+
+}
+
+
+.tt-story p:last-child {
+
+  margin-bottom:
+    0;
+
+}
+
+
+/* =========================================================
+   INVITATION
+   ========================================================= */
+
+.tt-invite {
+
+  grid-column:
+    2;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    24px minmax(0, 1fr) auto;
+
+  gap:
+    1rem;
+
+  align-items:
+    center;
+
+  max-width:
+    660px;
+
+  margin-top:
+    2.2rem;
+
+  padding:
+    1.15rem 0;
+
+  color:
+    inherit;
+
+  border-top:
+    1px solid var(--ss-border);
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  text-decoration:
+    none !important;
+
+  transition:
+    padding-left 0.18s ease,
+    border-color 0.18s ease;
+
+}
+
+
+.tt-invite:hover {
+
+  padding-left:
+    0.45rem;
+
+  color:
+    inherit;
+
+  border-color:
+    var(--ss-light-blue);
+
+}
+
+
+/* Tiny ping-pong ball */
+
+.tt-ball {
+
+  display:
+    block;
+
+  width:
+    15px;
+
+  height:
+    15px;
+
+  background:
+    var(--ss-background);
+
+  border:
+    2px solid var(--ss-blue);
+
+  border-radius:
+    50%;
+
+  transition:
+    transform 0.24s ease;
+
+}
+
+
+.tt-invite:hover .tt-ball {
+
+  transform:
+    translate(5px, -7px);
+
+}
+
+
+/* Invitation text */
+
+.tt-invite-copy {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+}
+
+
+.tt-invite-main {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.72rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.1;
+
+}
+
+
+.tt-invite-small {
+
+  margin-top:
+    0.18rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.98rem;
+
+  line-height:
+    1.3;
+
+}
+
+
+.tt-arrow {
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.35rem;
+
+  transition:
+    transform 0.18s ease;
+
+}
+
+
+.tt-invite:hover .tt-arrow {
+
+  transform:
+    translate(3px, -3px);
+
+}
+
+
+/* Small joke */
+
+.tt-footnote {
+
+  grid-column:
+    2;
+
+  max-width:
+    660px;
+
+  margin-top:
+    0.7rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.92rem;
+
+  font-style:
+    italic;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .tt-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .tt-opening {
+
+    grid-template-columns:
+      1fr;
+
+    row-gap:
+      0;
+
+  }
+
+
+  .tt-eyebrow,
+  .tt-title,
+  .tt-rule,
+  .tt-story,
+  .tt-invite,
+  .tt-footnote {
+
+    grid-column:
+      1;
+
+  }
+
+
+  .tt-story {
+
+    grid-row:
+      auto;
+
+    margin-top:
+      2.5rem;
+
+  }
+
+
+  .tt-invite {
+
+    margin-top:
+      2rem;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .tt-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.5rem;
+
+  }
+
+
+  .tt-title {
+
+    font-size:
+      3.45rem;
+
+  }
+
+
+  .tt-story p {
+
+    font-size:
+      1.1rem;
+
+  }
+
+
+  .tt-invite-main {
+
+    font-size:
+      1.5rem;
+
+  }
+
+}
+
+/* =========================================================
+   MAKING MOVIES / SCENES IN MY HEAD
+   ========================================================= */
+
+.film-page {
+
+  width:
+    min(
+      1460px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    3.2rem 0 5rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.film-hero {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(390px, 0.85fr)
+    minmax(620px, 1.15fr);
+
+  gap:
+    5.5rem;
+
+  align-items:
+    center;
+
+}
+
+
+.film-copy {
+
+  max-width:
+    610px;
+
+}
+
+
+.film-kicker {
+
+  margin-bottom:
+    1.2rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.86rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.13em;
+
+}
+
+
+.film-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.8rem,
+      4.7vw,
+      5.5rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.91;
+
+  letter-spacing:
+    -0.045em;
+
+}
+
+
+.film-title span {
+
+  color:
+    var(--ss-blue);
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+}
+
+
+.film-intro {
+
+  max-width:
+    590px;
+
+  margin-top:
+    2.4rem;
+
+}
+
+
+.film-intro p {
+
+  margin:
+    0 0 1.25rem 0;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.17rem;
+
+  line-height:
+    1.67;
+
+}
+
+
+/* =========================================================
+   POSTERS
+   ========================================================= */
+
+.film-posters {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    2.3rem;
+
+  align-items:
+    start;
+
+}
+
+
+.film-poster {
+
+  display:
+    block;
+
+  color:
+    inherit !important;
+
+  text-decoration:
+    none !important;
+
+}
+
+
+.film-poster-image {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    7px;
+
+  background:
+    #ffffff;
+
+  box-shadow:
+    0 13px 32px rgba(33, 75, 103, 0.09);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+
+}
+
+
+.film-poster-one .film-poster-image {
+
+  transform:
+    rotate(-0.45deg);
+
+}
+
+
+.film-poster-two .film-poster-image {
+
+  transform:
+    rotate(0.45deg);
+
+}
+
+
+.film-poster:hover .film-poster-image {
+
+  transform:
+    translateY(-5px)
+    rotate(0deg);
+
+  box-shadow:
+    0 18px 38px rgba(33, 75, 103, 0.14);
+
+}
+
+
+.film-poster-image img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+}
+
+
+/* YouTube overlay */
+
+.film-watch {
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  bottom:
+    0;
+
+  padding:
+    0.8rem 1rem;
+
+  color:
+    #ffffff;
+
+  background:
+    rgba(25, 55, 75, 0.91);
+
+  font-size:
+    1rem;
+
+  font-weight:
+    600;
+
+  text-align:
+    center;
+
+  opacity:
+    0;
+
+  transform:
+    translateY(100%);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+
+}
+
+
+.film-poster:hover .film-watch {
+
+  opacity:
+    1;
+
+  transform:
+    translateY(0);
+
+}
+
+
+/* Captions */
+
+.film-poster-caption {
+
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  gap:
+    1rem;
+
+  align-items:
+    baseline;
+
+  margin-top:
+    0.85rem;
+
+}
+
+
+.film-name {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-size:
+    1.35rem;
+
+  font-weight:
+    600;
+
+}
+
+
+.film-role {
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.92rem;
+
+  text-align:
+    right;
+
+}
+
+
+/* =========================================================
+   WRITING
+   ========================================================= */
+
+.film-writing {
+
+  margin-top:
+    5rem;
+
+  padding-top:
+    2.7rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.film-writing-heading {
+
+  margin-bottom:
+    2rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    2.7rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+}
+
+
+.film-writing-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    5rem;
+
+}
+
+
+.film-script {
+
+  position:
+    relative;
+
+  padding-left:
+    3rem;
+
+}
+
+
+.film-script-number {
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  top:
+    0.14rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.88rem;
+
+  font-variant-numeric:
+    tabular-nums;
+
+}
+
+
+.film-script-status {
+
+  margin-bottom:
+    0.5rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.11em;
+
+}
+
+
+.film-script-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    2rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.08;
+
+}
+
+
+.film-script-description {
+
+  max-width:
+    570px;
+
+  margin-top:
+    0.65rem;
+
+  color:
+    #40464a;
+
+  font-size:
+    1.08rem;
+
+  line-height:
+    1.58;
+
+}
+
+
+/* =========================================================
+   COLLABORATION CTA
+   ========================================================= */
+
+.film-collab {
+
+  position:
+    relative;
+
+  display:
+    block;
+
+  max-width:
+    950px;
+
+  margin-top:
+    4.5rem;
+
+  padding:
+    1.8rem 4.5rem 1.8rem 0;
+
+  color:
+    inherit !important;
+
+  border-top:
+    1px solid var(--ss-border);
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  text-decoration:
+    none !important;
+
+  transition:
+    padding-left 0.18s ease,
+    border-color 0.18s ease;
+
+}
+
+
+.film-collab:hover {
+
+  padding-left:
+    0.6rem;
+
+  border-color:
+    var(--ss-light-blue);
+
+}
+
+
+.film-collab-small {
+
+  margin-bottom:
+    0.4rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.11em;
+
+}
+
+
+.film-collab-main {
+
+  max-width:
+    800px;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.65rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1.2;
+
+}
+
+
+.film-collab-sub {
+
+  margin-top:
+    0.35rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+}
+
+
+.film-collab-arrow {
+
+  position:
+    absolute;
+
+  right:
+    1rem;
+
+  top:
+    50%;
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.5rem;
+
+  transform:
+    translateY(-50%);
+
+  transition:
+    transform 0.18s ease;
+
+}
+
+
+.film-collab:hover .film-collab-arrow {
+
+  transform:
+    translate(4px, -60%);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .film-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .film-hero {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      3.5rem;
+
+  }
+
+
+  .film-copy {
+
+    max-width:
+      800px;
+
+  }
+
+
+  .film-posters {
+
+    max-width:
+      760px;
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .film-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.5rem;
+
+  }
+
+
+  .film-title {
+
+    font-size:
+      3.55rem;
+
+  }
+
+
+  .film-posters {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.7rem;
+
+  }
+
+
+  .film-poster {
+
+    max-width:
+      390px;
+
+  }
+
+
+  .film-writing-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.4rem;
+
+  }
+
+
+  .film-writing {
+
+    margin-top:
+      3.8rem;
+
+  }
+
+
+  .film-collab {
+
+    padding-right:
+      3rem;
+
+  }
+
+}
+
+/* =========================================================
+   THEATRE
+   ========================================================= */
+
+.theatre-page {
+
+  width:
+    min(
+      1480px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    3rem 0 5rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.theatre-heading {
+
+  max-width:
+    1050px;
+
+}
+
+
+.theatre-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      4rem,
+      5.2vw,
+      6rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.9;
+
+  letter-spacing:
+    -0.045em;
+
+}
+
+
+.theatre-title span {
+
+  color:
+    var(--ss-blue);
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+}
+
+
+.theatre-subtitle {
+
+  margin-top:
+    1.35rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.18rem;
+
+  font-style:
+    italic;
+
+}
+
+
+/* =========================================================
+   OPENING PHOTOGRAPHS
+   ========================================================= */
+
+.theatre-photo-composition {
+
+ display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.52fr)
+    minmax(330px, 0.88fr);
+
+  gap:
+    1.6rem;
+
+  align-items:
+    end;
+
+  margin-top:
+    2.8rem;
+
+}
+
+
+.theatre-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 32px rgba(33, 75, 103, 0.09);
+
+}
+
+
+.theatre-photo-main {
+
+  width:
+    100%;
+
+}
+
+
+.theatre-photo-blue {
+
+  width:
+    100%;
+
+  max-width:
+    550px;
+
+  justify-self:
+    end;
+
+  transform:
+    translateY(1.15rem)
+    rotate(0.4deg);
+
+}
+
+
+/* =========================================================
+   PROGRAMME
+   ========================================================= */
+
+.theatre-programme {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1.05fr 1.05fr 0.72fr 1.05fr;
+
+  gap:
+    2.5rem;
+
+  align-items:
+    start;
+
+  margin-top:
+    6.5rem;
+
+  padding-top:
+    2.7rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+/* =========================================================
+   ACTS
+   ========================================================= */
+
+.theatre-act {
+
+  min-width:
+    0;
+
+}
+
+
+.theatre-act-number {
+
+  margin-bottom:
+    0.75rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.12em;
+
+}
+
+
+.theatre-act-title {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    2.15rem;
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+}
+
+
+.theatre-act p {
+
+  margin:
+    0;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.1rem;
+
+  line-height:
+    1.66;
+
+}
+
+
+/* =========================================================
+   SOLO PROGRAMME PHOTOGRAPH
+   ========================================================= */
+
+.theatre-programme-photo {
+
+  align-self:
+    start;
+
+  margin-top:
+    0.2rem;
+
+}
+
+
+.theatre-programme-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    6px;
+
+  box-shadow:
+    0 10px 26px rgba(33, 75, 103, 0.08);
+
+  transform:
+    rotate(-0.55deg);
+
+}
+
+
+.theatre-photo-caption {
+
+  margin-top:
+    0.75rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.86rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.35;
+
+}
+
+
+/* =========================================================
+   HOVER REVEALS
+   ========================================================= */
+
+.theatre-hover {
+
+  position:
+    relative;
+
+  display:
+    inline;
+
+  color:
+    var(--ss-blue);
+
+  font-weight:
+    600;
+
+  border-bottom:
+    1px dotted var(--ss-light-blue);
+
+  cursor:
+    help;
+
+  outline:
+    none;
+
+}
+
+
+.theatre-popover {
+
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    calc(100% + 14px);
+
+  z-index:
+    50;
+
+  width:
+    220px;
+
+  padding:
+    0.45rem;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid var(--ss-border);
+
+  border-radius:
+    6px;
+
+  box-shadow:
+    0 12px 32px rgba(18, 45, 62, 0.16);
+
+  opacity:
+    0;
+
+  visibility:
+    hidden;
+
+  pointer-events:
+    none;
+
+  transform:
+    translate(
+      -50%,
+      8px
+    );
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+
+}
+
+
+.theatre-popover img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    4px;
+
+}
+
+
+.theatre-hover:hover .theatre-popover,
+.theatre-hover:focus .theatre-popover {
+
+  opacity:
+    1;
+
+  visibility:
+    visible;
+
+  transform:
+    translate(
+      -50%,
+      0
+    );
+
+}
+
+
+/* Production-poster popup */
+
+.theatre-poster-popover {
+
+  width:
+    285px;
+
+}
+
+
+.theatre-hover-poster .theatre-popover {
+
+  left:
+    auto;
+
+  right:
+    0;
+
+  transform:
+    translate(
+      0,
+      8px
+    );
+
+}
+
+
+.theatre-hover-poster:hover .theatre-popover,
+.theatre-hover-poster:focus .theatre-popover {
+
+  transform:
+    translate(
+      0,
+      0
+    );
+
+}
+
+
+/* =========================================================
+   FINAL CUE
+   ========================================================= */
+
+.theatre-cue {
+
+  width:
+    max-content;
+
+  margin:
+    4.5rem auto 0;
+
+  padding:
+    0.55rem 1rem;
+
+  color:
+    var(--ss-muted);
+
+  border-top:
+    1px solid var(--ss-border);
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.085em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .theatre-programme {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap:
+      3rem;
+
+  }
+
+
+  .theatre-programme-photo {
+
+    max-width:
+      340px;
+
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .theatre-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .theatre-photo-composition {
+
+    grid-template-columns:
+      minmax(0, 1.25fr)
+      minmax(250px, 0.75fr);
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .theatre-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.5rem;
+
+  }
+
+
+  .theatre-title {
+
+    font-size:
+      3.6rem;
+
+  }
+
+
+  .theatre-photo-composition {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.3rem;
+
+  }
+
+
+  .theatre-photo-blue {
+
+    width:
+      72%;
+
+    max-width:
+      330px;
+
+    justify-self:
+      end;
+
+    transform:
+      none;
+
+  }
+
+
+  .theatre-programme {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.5rem;
+
+    margin-top:
+      4rem;
+
+  }
+
+
+  .theatre-programme-photo {
+
+    width:
+      66%;
+
+    max-width:
+      300px;
+
+    justify-self:
+      end;
+
+  }
+
+
+  .theatre-popover {
+
+    left:
+      0;
+
+    width:
+      190px;
+
+    transform:
+      translate(
+        0,
+        8px
+      );
+
+  }
+
+
+  .theatre-hover:hover .theatre-popover,
+  .theatre-hover:focus .theatre-popover {
+
+    transform:
+      translate(
+        0,
+        0
+      );
+
+  }
+
+
+  .theatre-poster-popover {
+
+    width:
+      220px;
+
+  }
+
+
+  .theatre-cue {
+
+    width:
+      auto;
+
+    text-align:
+      center;
+
+  }
+
+}
+
+
+/* =========================================================
+   AT THE MOVIES
+   ========================================================= */
+
+.movies-page {
+
+  width:
+    min(
+      1280px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    3.6rem 0 5rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.movies-opening {
+
+  max-width:
+    980px;
+
+  padding-bottom:
+    2.7rem;
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+}
+
+
+.movies-kicker {
+
+  margin-bottom:
+    0.8rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.movies-heading {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3rem,
+      4.1vw,
+      4.4rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    1;
+
+  letter-spacing:
+    -0.035em;
+
+}
+
+
+.movies-deck {
+
+  max-width:
+    760px;
+
+  margin-top:
+    1.15rem;
+
+  color:
+    #3b4247;
+
+  font-size:
+    1.2rem;
+
+  line-height:
+    1.6;
+
+}
+
+
+/* =========================================================
+   FILM LEDGER
+   ========================================================= */
+
+.movies-ledger {
+
+  width:
+    100%;
+
+}
+
+
+.movies-entry {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    52px
+    115px
+    minmax(0, 1fr);
+
+  gap:
+    2rem;
+
+  align-items:
+    start;
+
+  padding:
+    2.3rem 0;
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+  transition:
+    padding-left 0.18s ease;
+
+}
+
+
+.movies-entry:hover {
+
+  padding-left:
+    0.5rem;
+
+}
+
+
+.movies-entry-number {
+
+  padding-top:
+    0.15rem;
+
+  color:
+    #a1afb8;
+
+  font-size:
+    0.9rem;
+
+  font-variant-numeric:
+    tabular-nums;
+
+  transition:
+    color 0.15s ease;
+
+}
+
+
+.movies-entry:hover .movies-entry-number {
+
+  color:
+    var(--ss-blue);
+
+}
+
+
+.movies-entry-label {
+
+  padding-top:
+    0.08rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.movies-entry-text {
+
+  max-width:
+    820px;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.22rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+.movies-entry-emphasis {
+
+  max-width:
+    850px;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    1.65rem;
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.45;
+
+}
+
+
+/* =========================================================
+   AFTERWORD
+   ========================================================= */
+
+.movies-afterword {
+
+  max-width:
+    900px;
+
+  margin-top:
+    3.8rem;
+
+}
+
+
+.movies-afterword-main {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      1.7rem,
+      2.4vw,
+      2.35rem
+    );
+
+  font-weight:
+    500;
+
+  line-height:
+    1.32;
+
+}
+
+
+/* =========================================================
+   ARCHIVAL FOOTNOTE
+   ========================================================= */
+
+.movies-footnote {
+
+  width:
+    max-content;
+
+  margin:
+    4.3rem auto 0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.86rem;
+
+  font-style:
+    italic;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .movies-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .movies-opening {
+
+    max-width:
+      100%;
+
+  }
+
+
+  .movies-afterword {
+
+    max-width:
+      100%;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .movies-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.7rem;
+
+  }
+
+
+  .movies-heading {
+
+    font-size:
+      3.25rem;
+
+  }
+
+
+  .movies-deck {
+
+    font-size:
+      1.1rem;
+
+  }
+
+
+  .movies-entry {
+
+    grid-template-columns:
+      38px
+      minmax(0, 1fr);
+
+    gap:
+      0.7rem 1rem;
+
+    padding:
+      1.9rem 0;
+
+  }
+
+
+  .movies-entry-label {
+
+    grid-column:
+      2;
+
+  }
+
+
+  .movies-entry-text {
+
+    grid-column:
+      2;
+
+    font-size:
+      1.1rem;
+
+  }
+
+
+  .movies-entry-emphasis {
+
+    font-size:
+      1.45rem;
+
+  }
+
+
+  .movies-entry:hover {
+
+    padding-left:
+      0;
+
+  }
+
+
+  .movies-footnote {
+
+    width:
+      auto;
+
+    text-align:
+      center;
+
+  }
+
+}
+
+/* =========================================================
+   MISCELLANEOUS
+   ========================================================= */
+
+.misc-page {
+
+  width:
+    min(
+      1400px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    4rem 0 6rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.misc-opening {
+
+  max-width:
+    1100px;
+
+  padding-bottom:
+    2.2rem;
+
+}
+
+
+.misc-heading {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      4rem,
+      5.4vw,
+      6rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.95;
+
+  letter-spacing:
+    -0.045em;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADING
+   ========================================================= */
+
+.misc-section-heading {
+
+  margin-bottom:
+    1.4rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      2.35rem,
+      3vw,
+      3.25rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    1.03;
+
+  letter-spacing:
+    -0.025em;
+
+}
+
+
+/* =========================================================
+   MUSIC
+   ========================================================= */
+
+.misc-music {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.55fr)
+    minmax(330px, 0.72fr);
+
+  gap:
+    4.7rem;
+
+  align-items:
+    center;
+
+  margin-top:
+    3.5rem;
+
+}
+
+
+.misc-band-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 14px 36px rgba(31, 54, 69, 0.09);
+
+}
+
+
+.misc-music-copy {
+
+  max-width:
+    480px;
+
+}
+
+
+.misc-music-copy p {
+
+  margin-top:
+    0;
+
+  margin-bottom:
+    1.25rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.12rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+/* =========================================================
+   ADDA
+   ========================================================= */
+
+.misc-adda {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(270px, 0.52fr)
+    minmax(0, 1fr);
+
+  gap:
+    4.5rem;
+
+  align-items:
+    center;
+
+  margin:
+    6rem 0;
+
+  padding:
+    1rem 0;
+
+}
+
+
+.misc-adda-word {
+
+  color:
+    var(--ss-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      5rem,
+      8vw,
+      8.4rem
+    );
+
+  font-weight:
+    500;
+
+  font-style:
+    italic;
+
+  line-height:
+    0.84;
+
+  letter-spacing:
+    -0.055em;
+
+}
+
+
+.misc-adda-copy {
+
+  max-width:
+    760px;
+
+}
+
+
+.misc-adda-copy p {
+
+  margin-top:
+    0;
+
+  margin-bottom:
+    1.2rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.16rem;
+
+  line-height:
+    1.7;
+
+}
+
+
+/* =========================================================
+   VIDEO GAMES
+   ========================================================= */
+
+.misc-gaming {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(320px, 0.75fr)
+    minmax(0, 1fr);
+
+  gap:
+    5.5rem;
+
+  align-items:
+    start;
+
+  margin-top:
+    1rem;
+
+  padding:
+    1rem 0 2rem;
+
+}
+
+
+.misc-gaming-label {
+
+  margin-bottom:
+    0.85rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.79rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.misc-gaming-heading {
+
+  margin-bottom:
+    0;
+
+}
+
+
+.misc-gaming-copy {
+
+  max-width:
+    760px;
+
+}
+
+
+.misc-gaming-copy p {
+
+  margin-top:
+    0;
+
+  margin-bottom:
+    1.25rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.16rem;
+
+  line-height:
+    1.7;
+
+}
+
+
+/* =========================================================
+   SMALL MOMENTS
+   ========================================================= */
+
+.misc-snapshots {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(180px, 0.68fr)
+    minmax(300px, 1.15fr);
+
+  gap:
+    1.35rem;
+
+  width:
+    min(
+      760px,
+      68%
+    );
+
+  margin:
+    5rem 4% 0 auto;
+
+  align-items:
+    end;
+
+}
+
+
+.misc-snapshot img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 11px 30px rgba(31, 54, 69, 0.08);
+
+}
+
+
+.misc-snapshot-pizza {
+
+  margin-bottom:
+    2.2rem;
+
+  transform:
+    rotate(-0.35deg);
+
+}
+
+
+.misc-snapshot-dog {
+
+  transform:
+    rotate(0.25deg);
+
+}
+
+
+/* =========================================================
+   SIDE QUEST
+   ========================================================= */
+
+.misc-sidequest {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    120px
+    minmax(0, 650px);
+
+  gap:
+    2.4rem;
+
+  width:
+    fit-content;
+
+  margin:
+    6rem 0 0 8%;
+
+  padding:
+    1.45rem 0;
+
+  border-top:
+    1px solid var(--ss-border);
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+}
+
+
+.misc-sidequest-label {
+
+  padding-top:
+    0.32rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.misc-sidequest-text {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    1.65rem;
+
+  line-height:
+    1.4;
+
+}
+
+
+.misc-sidequest-text span {
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.92em;
+
+  font-style:
+    italic;
+
+}
+
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.misc-ending {
+
+  max-width:
+    620px;
+
+  margin:
+    6rem auto 0;
+
+  text-align:
+    center;
+
+}
+
+
+.misc-ending-mark {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.9rem;
+
+}
+
+
+.misc-ending p {
+
+  margin:
+    0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.55;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .misc-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .misc-music {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.8rem;
+
+  }
+
+
+  .misc-music-copy {
+
+    max-width:
+      760px;
+
+  }
+
+
+  .misc-adda {
+
+    grid-template-columns:
+      minmax(190px, 0.45fr)
+      minmax(0, 1fr);
+
+    gap:
+      2.8rem;
+
+  }
+
+
+  .misc-gaming {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.8rem;
+
+  }
+
+
+  .misc-snapshots {
+
+    width:
+      min(
+        680px,
+        82%
+      );
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .misc-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.8rem;
+
+  }
+
+
+  .misc-heading {
+
+    font-size:
+      3.6rem;
+
+  }
+
+
+  .misc-music {
+
+    margin-top:
+      2.7rem;
+
+  }
+
+
+  .misc-section-heading {
+
+    font-size:
+      2.35rem;
+
+  }
+
+
+  .misc-adda {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.7rem;
+
+    margin:
+      4.3rem 0;
+
+    padding:
+      0;
+
+  }
+
+
+  .misc-adda-word {
+
+    font-size:
+      5.2rem;
+
+  }
+
+
+  .misc-gaming {
+
+    margin-top:
+      0;
+
+  }
+
+
+  .misc-snapshots {
+
+    grid-template-columns:
+      0.72fr
+      1.15fr;
+
+    gap:
+      0.9rem;
+
+    width:
+      94%;
+
+    margin:
+      4rem 0 0 auto;
+
+  }
+
+
+  .misc-snapshot-pizza {
+
+    margin-bottom:
+      1.25rem;
+
+  }
+
+
+  .misc-sidequest {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      0.8rem;
+
+    width:
+      92%;
+
+    margin:
+      4.8rem 0 0;
+
+  }
+
+
+  .misc-sidequest-text {
+
+    font-size:
+      1.48rem;
+
+  }
+
+
+  .misc-ending {
+
+    margin-top:
+      4.7rem;
+
+  }
+
+}
+
+
+/* =========================================================
+   SCUBA
+   ========================================================= */
+
+.scuba-page {
+
+  width:
+    min(
+      1400px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    4rem 0 6rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.scuba-opening {
+
+  padding-bottom:
+    2.8rem;
+
+}
+
+
+.scuba-title {
+
+  width:
+    100%;
+
+  max-width:
+    none;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      3.2rem,
+      4.6vw,
+      5.5rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.95;
+
+  letter-spacing:
+    -0.05em;
+
+  white-space:
+    nowrap;
+
+}
+
+
+.scuba-qualification-line {
+
+  margin-top:
+    1.2rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.88rem;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.045em;
+
+}
+
+
+.scuba-qualification-line span {
+
+  margin:
+    0 0.45rem;
+
+  color:
+    var(--ss-light-blue);
+
+}
+
+
+/* =========================================================
+   BEGINNING
+   ========================================================= */
+
+.scuba-beginning {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.62fr);
+
+  gap:
+    5.5rem;
+
+  align-items:
+    center;
+
+  padding:
+    4rem 0 5.5rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.scuba-beginning-copy {
+
+  max-width:
+    690px;
+
+}
+
+
+.scuba-small-label {
+
+  margin-bottom:
+    1.1rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.scuba-beginning-copy p {
+
+  margin:
+    0 0 1.3rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.16rem;
+
+  line-height:
+    1.72;
+
+}
+
+
+.scuba-beginning-copy .scuba-lead {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      1.75rem,
+      2.2vw,
+      2.3rem
+    );
+
+  font-weight:
+    500;
+
+  line-height:
+    1.38;
+
+}
+
+
+.scuba-film {
+
+  color:
+    var(--ss-blue);
+
+  border-bottom:
+    1px dotted var(--ss-light-blue);
+
+  cursor:
+    help;
+
+}
+
+
+.scuba-shore-photo {
+
+  width:
+    min(
+      100%,
+      410px
+    );
+
+  justify-self:
+    end;
+
+}
+
+
+.scuba-shore-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 14px 34px rgba(31, 54, 69, 0.09);
+
+}
+
+
+/* =========================================================
+   UNDERWATER COLLAGE
+   ========================================================= */
+
+.scuba-water {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(0, 0.7fr);
+
+  gap:
+    1.8rem;
+
+  align-items:
+    end;
+
+  margin:
+    0 0 6.5rem;
+
+}
+
+
+.scuba-blue-photo {
+
+  width:
+    100%;
+
+}
+
+
+.scuba-green-block {
+
+  width:
+    100%;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    stretch;
+
+}
+
+
+.scuba-blue-photo img,
+.scuba-green-photo img,
+.scuba-gear-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 30px rgba(31, 54, 69, 0.08);
+
+}
+
+
+/* Main underwater image */
+
+.scuba-blue-photo img {
+
+  height:
+    auto;
+
+}
+
+
+/* Small pre-dive detail */
+
+.scuba-gear-photo {
+
+  width:
+    66%;
+
+  margin:
+    0 0 1.35rem 0;
+
+}
+
+
+.scuba-gear-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  object-fit:
+    contain;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 30px rgba(31, 54, 69, 0.08);
+
+}
+
+
+/* Secondary underwater image */
+
+.scuba-green-photo {
+
+  width:
+    100%;
+
+}
+
+
+.scuba-green-photo img {
+
+  height:
+    auto;
+
+}
+
+
+.scuba-water-note {
+
+  max-width:
+    520px;
+
+  margin:
+    1.2rem 0 0;
+
+  color:
+    var(--ss-muted);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.12rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.45;
+
+}
+
+
+/* =========================================================
+   TRAVEL
+   ========================================================= */
+
+.scuba-travel {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(300px, 0.7fr)
+    minmax(0, 1fr);
+
+  gap:
+    5rem;
+
+  align-items:
+    start;
+
+  margin:
+    6.5rem 0 4.3rem;
+
+}
+
+
+.scuba-travel-heading {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      2.6rem,
+      3.6vw,
+      3.8rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    1.02;
+
+  letter-spacing:
+    -0.03em;
+
+}
+
+
+.scuba-travel-copy {
+
+  max-width:
+    760px;
+
+}
+
+
+.scuba-travel-copy p {
+
+  margin:
+    0 0 1.25rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.16rem;
+
+  line-height:
+    1.72;
+
+}
+
+
+/* =========================================================
+   MAP
+   ========================================================= */
+
+.scuba-map-section {
+
+  margin-top:
+    2rem;
+
+  padding-top:
+    2.5rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.scuba-map-heading {
+
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    center;
+
+  gap:
+    2rem;
+
+  margin-bottom:
+    1.8rem;
+
+}
+
+
+.scuba-map-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    2rem;
+
+  font-weight:
+    600;
+
+}
+
+
+/* =========================================================
+   MAP LEGEND
+   ========================================================= */
+
+.scuba-map-legend {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    1.5rem;
+
+}
+
+
+.scuba-legend-item {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.5rem;
+
+  color:
+    #4f5a61;
+
+  font-size:
+    0.92rem;
+
+  font-weight:
+    500;
+
+}
+
+
+.scuba-legend-swatch {
+
+  display:
+    inline-block;
+
+  width:
+    16px;
+
+  height:
+    10px;
+
+  border-radius:
+    2px;
+
+}
+
+
+.scuba-legend-swatch.travelled {
+
+  background:
+    #9fb9c8;
+
+}
+
+
+.scuba-legend-swatch.dived {
+
+  background:
+    #214b67;
+
+}
+
+
+/* =========================================================
+   MAP ITSELF
+   ========================================================= */
+
+.scuba-world-map {
+
+  width:
+    100%;
+
+  height:
+    650px;
+
+}
+
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.scuba-ending {
+
+  max-width:
+    720px;
+
+  margin:
+    5.5rem auto 0;
+
+  text-align:
+    center;
+
+}
+
+
+.scuba-ending-mark {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.9rem;
+
+}
+
+
+.scuba-ending p {
+
+  margin:
+    0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.6;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .scuba-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .scuba-beginning {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      3rem;
+
+  }
+
+
+  .scuba-shore-photo {
+
+    justify-self:
+      start;
+
+    width:
+      min(
+        70%,
+        410px
+      );
+
+  }
+
+
+  .scuba-water {
+
+    grid-template-columns:
+      1.15fr
+      0.85fr;
+
+  }
+
+
+  .scuba-gear-photo {
+
+    width:
+      72%;
+
+  }
+
+
+  .scuba-travel {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.6rem;
+
+  }
+
+
+  .scuba-map-heading {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+    gap:
+      1rem;
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .scuba-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.8rem;
+
+  }
+
+
+  .scuba-title {
+
+    font-size:
+      3.65rem;
+
+    white-space:
+      normal;
+
+  }
+
+
+  .scuba-qualification-line {
+
+    font-size:
+      0.79rem;
+
+  }
+
+
+  .scuba-beginning {
+
+    padding:
+      3.2rem 0 4rem;
+
+  }
+
+
+  .scuba-shore-photo {
+
+    width:
+      82%;
+
+  }
+
+
+  .scuba-water {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.5rem;
+
+    margin-bottom:
+      4.5rem;
+
+  }
+
+
+  .scuba-green-block {
+
+    width:
+      78%;
+
+    margin-left:
+      auto;
+
+  }
+
+
+  .scuba-gear-photo {
+
+    width:
+      68%;
+
+    margin-bottom:
+       0 0 1rem 0;
+
+  }
+
+
+  .scuba-water-note {
+
+    font-size:
+      1rem;
+
+  }
+
+
+  .scuba-travel {
+
+    margin:
+      4.8rem 0 3.5rem;
+
+  }
+
+
+  .scuba-map-legend {
+
+    flex-wrap:
+      wrap;
+
+    gap:
+      0.8rem 1.2rem;
+
+  }
+
+
+  .scuba-world-map {
+
+    height:
+      470px;
+
+  }
+
+
+  .scuba-ending {
+
+    margin-top:
+      4.5rem;
+
+  }
+
+}
+
+
+/* =========================================================
+   BOOKS / READING NOTES
+   ========================================================= */
+
+   .books-memory-credit {
+
+  text-align:
+    right;
+
+}
+
+.books-photo-credit {
+
+  display:
+    block;
+
+  margin-top:
+    0.4rem;
+
+  font-style:
+    normal;
+
+}
+
+.books-page {
+
+  width:
+    min(
+      1320px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    4rem 0 6rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.books-opening {
+
+  padding-bottom:
+    2.8rem;
+
+}
+
+
+.books-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      4rem,
+      5.5vw,
+      6rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.94;
+
+  letter-spacing:
+    -0.05em;
+
+}
+
+
+/* =========================================================
+   READING LOG
+   ========================================================= */
+
+.books-log {
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.books-entry {
+
+  border-bottom:
+    1px solid var(--ss-border);
+
+}
+
+
+.books-entry-summary {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    180px
+    minmax(0, 1fr)
+    28px;
+
+  gap:
+    2rem;
+
+  align-items:
+    center;
+
+  padding:
+    1.55rem 0;
+
+  cursor:
+    pointer;
+
+  list-style:
+    none;
+
+}
+
+
+.books-entry-summary::-webkit-details-marker {
+
+  display:
+    none;
+
+}
+
+
+.books-entry-date {
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.13em;
+
+}
+
+
+.books-entry-summary-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.55rem;
+
+  font-weight:
+    600;
+
+}
+
+
+.books-entry-toggle::before {
+
+  content:
+    "+";
+
+  color:
+    var(--ss-blue);
+
+  font-size:
+    1.45rem;
+
+  font-weight:
+    400;
+
+}
+
+
+.books-entry[open]
+.books-entry-toggle::before {
+
+  content:
+    "−";
+
+}
+
+
+/* =========================================================
+   ENTRY BODY
+   ========================================================= */
+
+.books-entry-body {
+
+  padding:
+    2.8rem 0 4.5rem;
+
+}
+
+
+/* =========================================================
+   CURRENT BOOK
+   ========================================================= */
+
+.books-current-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.03fr)
+    minmax(360px, 0.72fr);
+
+  gap:
+    5rem;
+
+  align-items:
+    start;
+
+}
+
+
+.books-current-copy {
+
+  max-width:
+    720px;
+
+}
+
+
+.books-small-label {
+
+  margin-bottom:
+    0.85rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.77rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.14em;
+
+}
+
+
+.books-book-title {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  align-items:
+    baseline;
+
+  gap:
+    0.45rem 0.75rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  line-height:
+    1.05;
+
+}
+
+
+.books-bengali {
+
+  font-family:
+    "Noto Serif Bengali",
+    "Nirmala UI",
+    serif;
+
+}
+
+
+.books-book-title
+.books-bengali {
+
+  font-size:
+    2.8rem;
+
+  font-weight:
+    600;
+
+}
+
+
+.books-roman-title {
+
+  font-size:
+    2rem;
+
+  font-weight:
+    600;
+
+}
+
+
+.books-translation {
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+}
+
+
+.books-author {
+
+  margin:
+    0.55rem 0 1.8rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.03rem;
+
+}
+
+
+.books-current-copy p {
+
+  margin:
+    0 0 1.3rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.14rem;
+
+  line-height:
+    1.72;
+
+}
+
+
+/* =========================================================
+   PATHER PANCHALI HOVER
+   ========================================================= */
+
+.books-poster-trigger {
+
+  position:
+    relative;
+
+  display:
+    inline;
+
+  color:
+    var(--ss-blue);
+
+  border-bottom:
+    1px dotted var(--ss-light-blue);
+
+  cursor:
+    help;
+
+  outline:
+    none;
+
+}
+
+
+.books-poster-trigger
+.books-bengali {
+
+  margin-right:
+    0.22rem;
+
+}
+
+
+.books-poster-popover {
+
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    calc(100% + 14px);
+
+  z-index:
+    40;
+
+  width:
+    360px;
+
+  padding:
+    0.45rem;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid var(--ss-border);
+
+  border-radius:
+    6px;
+
+  box-shadow:
+    0 12px 32px rgba(18, 45, 62, 0.16);
+
+  opacity:
+    0;
+
+  visibility:
+    hidden;
+
+  pointer-events:
+    none;
+
+  transform:
+    translate(
+      -50%,
+      7px
+    );
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+
+}
+
+
+.books-poster-popover img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    4px;
+
+}
+
+
+.books-poster-popover > span {
+
+  display:
+    block;
+
+  padding:
+    0.45rem 0.25rem 0.15rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    0.78rem;
+
+  text-align:
+    center;
+
+}
+
+
+.books-poster-trigger:hover
+.books-poster-popover,
+.books-poster-trigger:focus
+.books-poster-popover {
+
+  opacity:
+    1;
+
+  visibility:
+    visible;
+
+  transform:
+    translate(
+      -50%,
+      0
+    );
+
+}
+
+
+/* =========================================================
+   KASH PHOTOGRAPH
+   ========================================================= */
+
+.books-kash-figure {
+
+  margin:
+    0;
+
+}
+
+
+.books-kash-figure img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 30px rgba(31, 54, 69, 0.07);
+
+}
+
+
+.books-kash-figure figcaption {
+
+  max-width:
+    500px;
+
+  margin:
+    0.9rem 0 0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1.02rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.5;
+
+}
+
+
+/* =========================================================
+   JUST FINISHED
+   ========================================================= */
+
+.books-finished {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    180px
+    minmax(0, 760px);
+
+  gap:
+    2.5rem;
+
+  margin-top:
+    4.5rem;
+
+  padding-top:
+    2.6rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.books-finished-label {
+
+  padding-top:
+    0.35rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.77rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.13em;
+
+}
+
+
+.books-finished-title {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    2rem;
+
+  font-weight:
+    600;
+
+}
+
+
+.books-finished-title span {
+
+  margin-left:
+    0.6rem;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-weight:
+    400;
+
+}
+
+
+.books-finished-content p {
+
+  margin:
+    0 0 1.2rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.13rem;
+
+  line-height:
+    1.7;
+
+}
+
+
+/* =========================================================
+   THE BOOK THAT STAYS PERSONAL
+   ========================================================= */
+
+.books-memory {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.65fr);
+
+  gap:
+    4.5rem;
+
+  align-items:
+    center;
+
+  margin-top:
+    6rem;
+
+}
+
+
+.books-memory-photo {
+
+  width:
+    100%;
+
+}
+
+
+.books-memory-photo img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 30px rgba(31, 54, 69, 0.07);
+
+}
+
+
+.books-memory-copy {
+
+  max-width:
+    440px;
+
+}
+
+
+.books-memory-label {
+
+  margin-bottom:
+    1.15rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.92rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.12em;
+
+}
+
+
+.books-memory-copy p {
+
+  margin:
+    0 0 1.1rem;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.14rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+.books-memory-book {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.15em;
+
+  font-weight:
+    600;
+
+  font-style:
+    italic;
+
+}
+
+
+.books-memory-copy
+.books-memory-last {
+
+  margin-top:
+    1.4rem;
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    serif;
+
+  font-size:
+    1.38rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.45;
+
+}
+
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.books-ending {
+
+  max-width:
+    720px;
+
+  margin:
+    6rem auto 0;
+
+  text-align:
+    center;
+
+}
+
+
+.books-ending-mark {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.9rem;
+
+}
+
+
+.books-ending p {
+
+  margin:
+    0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.6;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .books-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .books-current-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.8rem;
+
+  }
+
+
+  .books-kash-figure {
+
+    width:
+      min(
+        75%,
+        560px
+      );
+
+  }
+
+
+  .books-memory {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      2.5rem;
+
+  }
+
+
+  .books-memory-photo {
+
+    width:
+      min(
+        78%,
+        720px
+      );
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .books-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.8rem;
+
+  }
+
+
+  .books-title {
+
+    font-size:
+      3.7rem;
+
+  }
+
+
+  .books-entry-summary {
+
+    grid-template-columns:
+      1fr
+      28px;
+
+    gap:
+      0.45rem 1rem;
+
+  }
+
+
+  .books-entry-date {
+
+    grid-column:
+      1;
+
+  }
+
+
+  .books-entry-summary-title {
+
+    grid-column:
+      1;
+
+  }
+
+
+  .books-entry-toggle {
+
+    grid-column:
+      2;
+
+    grid-row:
+      1 / 3;
+
+    align-self:
+      center;
+
+  }
+
+
+  .books-book-title
+  .books-bengali {
+
+    font-size:
+      2.4rem;
+
+  }
+
+
+  .books-roman-title {
+
+    font-size:
+      1.75rem;
+
+  }
+
+
+  .books-kash-figure {
+
+    width:
+      100%;
+
+  }
+
+
+  .books-finished {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      0.8rem;
+
+    margin-top:
+      3.7rem;
+
+  }
+
+
+  .books-finished-title span {
+
+    display:
+      block;
+
+    margin:
+      0.25rem 0 0;
+
+  }
+
+
+  .books-memory {
+
+    margin-top:
+      4.5rem;
+
+  }
+
+
+  .books-memory-photo {
+
+    width:
+      100%;
+
+  }
+
+
+  .books-poster-popover {
+
+    left:
+      0;
+
+    width:
+      280px;
+
+    transform:
+      translate(
+        0,
+        7px
+      );
+
+  }
+
+
+  .books-poster-trigger:hover
+  .books-poster-popover,
+  .books-poster-trigger:focus
+  .books-poster-popover {
+
+    transform:
+      translate(
+        0,
+        0
+      );
+
+  }
+
+
+  .books-ending {
+
+    margin-top:
+      4.7rem;
+
+  }
+
+}
+
+/* =========================================================
+   SKETCHES
+   ========================================================= */
+
+.sketches-page {
+
+  width:
+    min(
+      1380px,
+      calc(100vw - 3rem)
+    );
+
+  max-width:
+    none;
+
+  margin-left:
+    50%;
+
+  transform:
+    translateX(-50%);
+
+  padding:
+    4rem 0 6rem;
+
+}
+
+
+/* =========================================================
+   OPENING
+   ========================================================= */
+
+.sketches-opening {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(360px, 0.7fr);
+
+  gap:
+    5rem;
+
+  align-items:
+    end;
+
+  padding-bottom:
+    3.5rem;
+
+}
+
+
+.sketches-title {
+
+  color:
+    var(--ss-dark-blue);
+
+  font-family:
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      4rem,
+      5.5vw,
+      6rem
+    );
+
+  font-weight:
+    600;
+
+  line-height:
+    0.94;
+
+  letter-spacing:
+    -0.05em;
+
+}
+
+
+.sketches-intro {
+
+  max-width:
+    580px;
+
+  color:
+    #30383d;
+
+  font-size:
+    1.15rem;
+
+  line-height:
+    1.68;
+
+}
+
+
+/* =========================================================
+   SKETCH WALL
+   ========================================================= */
+
+.sketches-wall {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(12, minmax(0, 1fr));
+
+  gap:
+    1.6rem;
+
+  align-items:
+    start;
+
+  padding-top:
+    3.6rem;
+
+  border-top:
+    1px solid var(--ss-border);
+
+}
+
+
+.sketch-card {
+
+  margin:
+    0;
+
+}
+
+
+.sketch-card img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    5px;
+
+  box-shadow:
+    0 10px 28px rgba(31, 54, 69, 0.07);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+}
+
+
+.sketch-card:hover img {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 15px 34px rgba(31, 54, 69, 0.10);
+
+}
+
+
+/* =========================================================
+   ROW ONE
+   ========================================================= */
+
+.sketch-card:nth-child(1) {
+
+  grid-column:
+    1 / 8;
+
+  margin-top:
+    1.5rem;
+
+}
+
+
+.sketch-card:nth-child(2) {
+
+  grid-column:
+    9 / 13;
+
+}
+
+
+/* =========================================================
+   ROW TWO
+   ========================================================= */
+
+.sketch-card:nth-child(3) {
+
+  grid-column:
+    1 / 8;
+
+  margin-top:
+    1.2rem;
+
+}
+
+
+.sketch-card:nth-child(4) {
+
+  grid-column:
+    9 / 13;
+
+  margin-top:
+    4rem;
+
+}
+
+
+/* =========================================================
+   ROW THREE
+   Three narrower notebook pages
+   ========================================================= */
+
+.sketch-card:nth-child(5) {
+
+  grid-column:
+    1 / 5;
+
+  margin-top:
+    2rem;
+
+}
+
+
+.sketch-card:nth-child(6) {
+
+  grid-column:
+    5 / 9;
+
+  margin-top:
+    4.5rem;
+
+}
+
+
+.sketch-card:nth-child(7) {
+
+  grid-column:
+    9 / 13;
+
+  margin-top:
+    1rem;
+
+}
+
+
+/* =========================================================
+   FINAL IMAGE
+   ========================================================= */
+
+.sketch-card:nth-child(8) {
+
+  grid-column:
+    3 / 11;
+
+  margin-top:
+    3.2rem;
+
+}
+
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.sketches-ending {
+
+  max-width:
+    620px;
+
+  margin:
+    6rem auto 0;
+
+  text-align:
+    center;
+
+}
+
+
+.sketches-ending-mark {
+
+  margin-bottom:
+    1rem;
+
+  color:
+    var(--ss-light-blue);
+
+  font-size:
+    0.9rem;
+
+}
+
+
+.sketches-ending p {
+
+  margin:
+    0;
+
+  color:
+    var(--ss-muted);
+
+  font-size:
+    1rem;
+
+  font-style:
+    italic;
+
+  line-height:
+    1.55;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .sketches-page {
+
+    width:
+      calc(100vw - 3rem);
+
+  }
+
+
+  .sketches-opening {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.5rem;
+
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .sketches-page {
+
+    width:
+      calc(100vw - 2rem);
+
+    padding-top:
+      2.8rem;
+
+  }
+
+
+  .sketches-title {
+
+    font-size:
+      3.7rem;
+
+  }
+
+
+  .sketches-intro {
+
+    font-size:
+      1.08rem;
+
+  }
+
+
+  .sketches-wall {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap:
+      1rem;
+
+  }
+
+
+  .sketch-card:nth-child(1),
+  .sketch-card:nth-child(3),
+  .sketch-card:nth-child(8) {
+
+    grid-column:
+      1 / 3;
+
+    margin-top:
+      0;
+
+  }
+
+
+  .sketch-card:nth-child(2),
+  .sketch-card:nth-child(4),
+  .sketch-card:nth-child(5),
+  .sketch-card:nth-child(6),
+  .sketch-card:nth-child(7) {
+
+    grid-column:
+      auto;
+
+    margin-top:
+      0;
+
+  }
+
+
+  .sketches-ending {
+
+    margin-top:
+      4.5rem;
+
+  }
+
+}
+
+/* =========================================================
+   SUTRA HOVER
+   ========================================================= */
+
+.sutra-trigger {
+
+  position:
+    relative;
+
+  display:
+    inline-block;
+
+  color:
+    var(--ss-blue) !important;
+
+  border-bottom:
+    1px dotted var(--ss-light-blue);
+
+  cursor:
+    help;
+
+  outline:
+    none;
+
+}
+
+
+.sutra-trigger em {
+
+  color:
+    var(--ss-blue) !important;
+
+  font-style:
+    italic;
+
+}
+
+
+.sutra-popover {
+
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    calc(100% + 12px);
+
+  z-index:
+    200;
+
+  width:
+    135px;
+
+  padding:
+    0.55rem;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid var(--ss-border);
+
+  border-radius:
+    7px;
+
+  box-shadow:
+    0 12px 30px rgba(31, 54, 69, 0.16);
+
+  opacity:
+    0;
+
+  visibility:
+    hidden;
+
+  pointer-events:
+    none;
+
+  transform:
+    translate(-50%, 7px);
+
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease,
+    visibility 0.16s ease;
+
+}
+
+
+.sutra-popover img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  object-fit:
+    contain;
+
+}
+
+
+.sutra-trigger:hover .sutra-popover,
+.sutra-trigger:focus .sutra-popover {
+
+  opacity:
+    1;
+
+  visibility:
+    visible;
+
+  transform:
+    translate(-50%, 0);
+
+}
+
+/* =========================================================
+   PERSONAL PHOTOGRAPH CREDITS
+   ========================================================= */
+
+.photo-credit {
+
+  margin-top:
+    0.45rem;
+
+  color:
+    #9aa1a6;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    400;
+
+  letter-spacing:
+    0.035em;
+
+  line-height:
+    1.25;
+
+}
+
+/* Hide heading permalink icons where explicitly requested */
+
+.no-anchor .anchor,
+.no-anchor .anchorjs-link,
+.no-anchor a.anchor,
+.no-anchor a.anchorjs-link {
+
+  display:
+    none !important;
+
+}
