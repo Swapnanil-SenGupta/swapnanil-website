@@ -3,6 +3,13 @@
 
 ```{=html}
 <div class="misc-page">
+      <a
+  class="beyond-back"
+  href="beyond.html"
+  aria-label="Back"
+  title="Back"
+>←</a>
+
 
   <header class="misc-opening">
 
