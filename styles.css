@@ -10062,3 +10062,36 @@ h1.title {
   }
 
 }
+
+/* =========================================================
+   FINAL CV PHONE WIDTH FIX
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .cv-card-page {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .cv-card-content,
+  .cv-card-photo,
+  .cv-live-preview {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .cv-custom-title {
+    max-width: 100%;
+
+    white-space: normal !important;
+
+    font-size: clamp(2.5rem, 12vw, 3rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  .cv-live-preview iframe {
+    max-width: 100%;
+  }
+
+}
