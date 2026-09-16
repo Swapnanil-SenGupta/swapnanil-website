@@ -9890,3 +9890,175 @@ h1.title {
     none !important;
 
 }
+
+
+/* =========================================================
+   FINAL MOBILE REFINEMENTS
+   Homepage + CV + Application Desk + Beyond back button
+   Desktop layout is unchanged
+   ========================================================= */
+
+
+/* Back to Beyond Economics */
+
+.beyond-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  margin: 0 0 0.8rem 0;
+
+  color: var(--ss-blue) !important;
+
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1;
+
+  text-decoration: none !important;
+
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.beyond-back:hover {
+  color: var(--ss-dark-blue) !important;
+  transform: translateX(-3px);
+}
+
+
+/* Phone only */
+
+@media (max-width: 700px) {
+
+  /* =======================================================
+     HOMEPAGE
+     Make the principal compositions one vertical column
+     ======================================================= */
+
+  body.home-page .home-shell {
+    width: calc(100% - 2rem);
+  }
+
+  body.home-page .home-hero {
+    grid-template-columns: 1fr !important;
+
+    column-gap: 0 !important;
+    row-gap: 2rem;
+
+    align-items: start;
+
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+  }
+
+  body.home-page .home-intro {
+    width: 100%;
+    max-width: none;
+  }
+
+  body.home-page .hero-name {
+    font-size: clamp(2.7rem, 13vw, 3.5rem);
+
+    line-height: 0.98;
+
+    white-space: normal;
+  }
+
+  body.home-page .hero-role {
+    font-size: 1.3rem;
+
+    white-space: normal;
+  }
+
+  body.home-page .home-photo {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    transform: none;
+  }
+
+  body.home-page .home-photo img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.home-page .about-layout {
+    grid-template-columns: 1fr !important;
+
+    gap: 2.2rem;
+  }
+
+  body.home-page .research-sidebar {
+    margin-top: 0;
+  }
+
+  body.home-page .education-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  /* =======================================================
+     CV
+     Portrait -> CV preview -> download in one vertical line
+     ======================================================= */
+
+  .cv-card-page {
+    width: calc(100% - 2rem) !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 1.8rem !important;
+
+    padding-top: 2rem !important;
+  }
+
+  .cv-card-photo {
+    width: 100%;
+
+    justify-content: center !important;
+
+    padding-top: 0 !important;
+  }
+
+  .cv-card-photo img {
+    width: 100%;
+
+    max-width: 320px !important;
+
+    height: auto !important;
+  }
+
+  .cv-card-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .cv-live-preview {
+    width: min(330px, 100%) !important;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* =======================================================
+     APPLICATION DESK
+     Preserve the photograph's real aspect ratio
+     ======================================================= */
+
+  .application-image {
+    width: 100% !important;
+
+    height: auto !important;
+
+    aspect-ratio: auto !important;
+
+    object-fit: contain !important;
+  }
+
+}
