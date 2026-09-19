@@ -72,9 +72,10 @@
     <!-- 2 -->
     <article class="publication-item">
       <div class="publication-citation">
-        <span class="publication-authors"><strong>SenGupta, S.</strong>, &amp; Debnath, M. (Forthcoming).</span>
+        <span class="publication-authors"><strong>SenGupta, S.</strong>, &amp; Debnath, M. (2026).</span>
         <span class="publication-title">Democratisation and carbon emissions: Evidence from political regime transitions.</span>
-        <em>Economics of Governance.</em>
+        <em>Economics of Governance, 27</em>, 62.
+        <a class="publication-link" href="https://doi.org/10.1007/s10101-026-00401-2" rel="noopener" target="_blank">doi.org/10.1007/s10101-026-00401-2</a>
       </div>
       <details class="publication-abstract">
         <summary>Abstract</summary>

@@ -26,7 +26,6 @@
 
   </header>
 
-
   <!-- READING LOG -->
 
   <section class="books-log">
@@ -47,9 +46,7 @@
 
       </summary>
 
-
       <div class="books-entry-body">
-
 
         <!-- CURRENTLY READING -->
 
@@ -81,7 +78,6 @@
               Bibhutibhushan Bandyopadhyay
             </div>
 
-
             <p>
               You may not immediately recognise Bibhutibhushan by name,
               but you may know the story that travelled furthest from his
@@ -109,7 +105,6 @@
               and in French as <em>La Complainte du sentier</em>, directed by Satyajit Ray.
             </p>
 
-
             <p>
               What I love about Bibhutibhushan is not simply his eye for
               rural Bengal. He makes hardship beautiful without making it
@@ -118,7 +113,6 @@
               in his hands.
             </p>
 
-
             <p>
               I grew up in Bankura, a small town in West Bengal, so his
               village paths, fields, households and small-town rhythms can
@@ -126,7 +120,6 @@
               before interpretation. The distance between the page and
               memory simply disappears.
             </p>
-
 
             <p>
               <em>Anuborton</em> turns that attention towards the teachers
@@ -138,7 +131,6 @@
             </p>
 
           </div>
-
 
           <figure class="books-kash-figure">
 
@@ -160,7 +152,6 @@
           </figure>
 
         </div>
-
 
         <!-- JUST FINISHED -->
 
@@ -203,7 +194,6 @@
 
   </section>
 
-
   <!-- ONE THAT STAYS PERSONAL -->
 
   <section class="books-memory">
@@ -220,7 +210,6 @@
   </div>
 
 </div>
-
 
     <div class="books-memory-copy">
 
@@ -246,7 +235,6 @@
 
   </section>
 
-
   <!-- ENDING -->
 
   <footer class="books-ending">
@@ -264,3 +252,4 @@
 
 </div>
 ```
+

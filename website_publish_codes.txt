@@ -1,0 +1,6 @@
+cd C:\Users\sengu\OneDrive\swapnanil-website
+git status
+git add .
+git commit -m "Update website"
+git push
+quarto publish gh-pages
