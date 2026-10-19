@@ -56,7 +56,7 @@
           <div class="contact-value">
             Department of Macroeconomics<br>
             Halle Institute for Economic Research (IWH)<br>
-            Kleine Märkerstraße 8,<br>
+            Kleine Märkerstraße 8<br>
             06108 Halle (Saale), Germany
           </div>
 
