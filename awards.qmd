@@ -21,7 +21,7 @@
     <div class="award-row">
 
       <div class="award-year">
-        2025
+        2025-2026
       </div>
 
       <div class="award-content">
@@ -37,7 +37,7 @@
       </div>
 
       <div class="award-amount">
-        €26,462
+        €29,062
       </div>
 
     </div>
